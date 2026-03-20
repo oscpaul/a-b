@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+
+
+       .hero__heading {
+                 
+font-weight: bold;
+                       color: var(--black);
+                
+                text-align: center;
+    font-family: var(--font-primary);
+
+--font-primary: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    /* --font-secondary: Georgia, "Times New Roman", Times, serif; */
+    /* --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+   
+            }
+
+            .hero p{
+
+                text-align: center;
+
+            }
+
+               .hero__subheading {
+                                text-align: center;
+
+                  color: var(--gray-darker);
+                font-family: var(--font-primary);
+            }
+
+            :root {
+                    --font-size-20: 2rem;
+                    --font-size-50: 5rem;
+                --black: #0e1e25;
+                --white: #fff;
+                --gray-darkest: #141414;
+                --gray-darker: #414141;
+                --gray-darker2: #999;
+                --gray-dark: #bbb;
+                --gray-medium: #ddd;
+                --gray-lighten: #ededed;
+                --gray-light: #f5f5f5;
+                --gray-very-light: #f9f9f9;
+                --purple: #639;
+                --light-blue: #add8e6;
+                --lighter-blue: #f4f6fc;
+                --light-yellow: #fbe5ba;
+                --lighter-yellow: #fdf5e2;
+                --light-purple: #d8bfd8;
+                --lighter-purple: #fff0f5;
+                --text-color: var(--black)
+            }
+
+
+
+          .button:not(.button--link) {
+    --bg: var(--white);
+    --border: var(--black);
+    --text: var(--black);
+    align-items: center;
+    background-color: var(--bg);
+    border-color: var(--border);
+    border-radius: var(--size-40);
+    border-width: 1px;
+    color: var(--text);
+    display: inline-flex;
+    font-size: var(--font-size-12);
+    font-weight: var(--weight-700);
+    inline-size: -moz-fit-content;
+    inline-size: fit-content;
+    justify-content: center;
+    letter-spacing: .2em;
+    padding: var(--size-8) var(--size-20);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--transition-background-color-04s), var(--transition-color-04s), var(--transition-border-color-04s);
+    white-space: nowrap;
+    --size-40: 4rem;
+    padding:2vh;
+}
+
+
+ .button:not(.button--link):hover {
+                --bg: var(--black);
+                --text: var(--white)
+            }
+
+     .button:not(.button--link).button--reverse:hover {
+                --bg: var(--white);
+                --border: var(--black);
+                --text: var(--black)
+            }
+
+
+             .visually-hidden {
+                border: 0;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                white-space: nowrap;
+                width: 1px
+            }
+               .social__items {
+                align-items: center;
+                display: flex
+            }
+                 .hero .social__items {
+                      
+                justify-content: center
+            }
+      
+   .hero__cta {
+                text-align: center;
+
+            }
+            
+   .social__items {
+    justify-content: center;
+}
+         
+
+.button:not(.button--link):hover {
+                --bg: var(--black);
+                --text: var(--white)
+            }
+
+            .button:not(.button--link).button--reverse {
+                --bg: var(--black);
+                --border: var(--black);
+                --text: var(--white)
+            }
+
+            .button:not(.button--link).button--reverse:hover {
+                --bg: var(--white);
+                --border: var(--black);
+                --text: var(--black)
+            }
+
+            .loader-wrapper {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.loader-wrapper.show {
+  opacity: 1;
+}
+
+
+
+
+
