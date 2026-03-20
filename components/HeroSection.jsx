@@ -129,7 +129,7 @@ export default function HeroSection() {
     track("cta_click", {
       section: "hero",
       page: "home",
-      destination: "/routine-maintenance",
+      destination: "/maintenance",
     })
   }
 >
