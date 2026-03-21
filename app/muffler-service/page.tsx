@@ -4,8 +4,8 @@ import Head from "next/head";
 
 const mufflerService = {
   title: "Muffler Repair & Replacement",
-  overview:
-    "A properly functioning muffler is essential for reducing noise, improving exhaust flow, and keeping your vehicle running efficiently. At 2 Brothers Auto & Muffler in Addison, IL, we provide expert muffler repair and replacement for all makes and models.",
+overview:
+  "Your muffler plays a critical role in controlling noise, maintaining proper exhaust flow, and protecting your engine’s performance. In the Chicago area, muffler service is especially important due to harsh winters, road salt, and constant moisture exposure. These conditions accelerate rust and corrosion in your exhaust system. At 2 Brothers Auto & Muffler in Addison, IL, we provide expert muffler repair and replacement to keep your vehicle running efficiently, quietly, and safely year-round.",
   details: [
     {
       text: "Inspect and diagnose muffler and exhaust system issues.",
@@ -22,20 +22,17 @@ const mufflerService = {
   ],
   faq: [
     {
-      question: "How can I tell if my muffler needs repair?",
-      answer:
-        "Signs include loud exhaust noise, rattling, or reduced engine performance. Our experts inspect and repair mufflers promptly.",
-    },
-    {
-      question: "Do you provide muffler replacement for all vehicle types?",
-      answer:
-        "Yes, we service all makes and models, including cars, trucks, and SUVs.",
-    },
-    {
-      question: "How long does muffler repair usually take?",
-      answer:
-        "Most repairs can be completed within a few hours, depending on parts availability.",
-    },
+  text: "Loud exhaust noise or rumbling — often caused by holes, cracks, or separation in the muffler.",
+  img: "muffer-repair-in-victorville.webp",
+},
+{
+  text: "Rattling or vibrations under the vehicle — may indicate loose or damaged internal components.",
+  img: "muffler-repair.jpg",
+},
+{
+  text: "Reduced fuel efficiency or sluggish performance — restricted exhaust flow forces your engine to work harder.",
+  img: "exhaust-muffler-repair-service.webp",
+},
   ],
 };
 
@@ -122,9 +119,9 @@ export default function MufflerRepair() {
             <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
               Why Choose 2 Brothers Auto & Muffler
             </h2>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
-              Serving Addison, Elmhurst, Bensenville, Villa Park, Lombard, and Chicago, we provide expert muffler repair and replacement using high-quality parts and professional service. Fast, reliable, and affordable.
-            </p>
+         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+  Serving Addison, Elmhurst, Bensenville, Villa Park, Lombard, and Chicago, we specialize in diagnosing and repairing rust-damaged exhaust systems caused by Midwest weather. Our team delivers fast, reliable muffler service using quality parts built to withstand harsh conditions.
+</p>
           </div>
 
           {/* FAQ Section */}
