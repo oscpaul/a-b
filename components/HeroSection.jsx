@@ -122,15 +122,14 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="mt-3">
-       <Link
-  href="/routine-maintenance"
+ <Link
+  href="/maintenance"
   className="button"
   onClick={() =>
     track("cta_click", {
       section: "hero",
       page: "home",
       destination: "/maintenance",
-      
     })
   }
 >
