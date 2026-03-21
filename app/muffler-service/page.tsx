@@ -20,20 +20,23 @@ overview:
       img: "exhaust-muffler-repair-service.webp",
     },
   ],
-  faq: [
-    {
-  text: "Loud exhaust noise or rumbling — often caused by holes, cracks, or separation in the muffler.",
-  img: "muffer-repair-in-victorville.webp",
-},
-{
-  text: "Rattling or vibrations under the vehicle — may indicate loose or damaged internal components.",
-  img: "muffler-repair.jpg",
-},
-{
-  text: "Reduced fuel efficiency or sluggish performance — restricted exhaust flow forces your engine to work harder.",
-  img: "exhaust-muffler-repair-service.webp",
-},
-  ],
+faq: [
+  {
+    question: "What are common signs my muffler needs replacement?",
+    answer:
+      "Loud exhaust noise, rattling under the vehicle, or visible rust are common signs your muffler may be failing.",
+  },
+  {
+    question: "Can a bad muffler affect fuel efficiency?",
+    answer:
+      "Yes. A damaged or restricted muffler can disrupt exhaust flow, forcing your engine to work harder and reducing fuel efficiency.",
+  },
+  {
+    question: "Why is muffler service important in the Chicago area?",
+    answer:
+      "Chicago winters expose vehicles to road salt, moisture, and temperature swings, all of which accelerate rust and corrosion in the exhaust system. Regular muffler inspections help prevent leaks and costly repairs.",
+  },
+],
 };
 
 export default function MufflerRepair() {
