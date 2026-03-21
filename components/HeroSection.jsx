@@ -130,6 +130,7 @@ export default function HeroSection() {
       section: "hero",
       page: "home",
       destination: "/maintenance",
+      
     })
   }
 >
