@@ -1,10 +1,10 @@
 export default function TypeLockup() {
   return (
-<section className="w-full min-h-[80vh] flex items-center">      
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+    <section className="w-full min-h-[70vh] flex items-center py-16">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8 w-full">
         
         {/* LEFT */}
-        <div className="w-full md:w-1/2 flex flex-col justify-between h-full">
+        <div className="w-full md:w-1/2 flex flex-col justify-between">
           
           {/* Top Row */}
           <div>
@@ -12,21 +12,23 @@ export default function TypeLockup() {
               Your Headline Here
             </h2>
             <p className="text-gray-600">
-              Short supporting text goes here. Keep it tight.
+              Short supporting text goes here.
             </p>
           </div>
 
           {/* Bottom Row (Features) */}
-          <div className="flex gap-4 mt-6">
-            <div className="flex-1 p-3 border rounded-lg">
+          <div className="flex justify-between w-full mt-10">
+            
+            <div className="w-[48%] p-4 border rounded-lg">
               <p className="font-medium text-sm">Feature One</p>
               <p className="text-xs text-gray-500">Small detail</p>
             </div>
 
-            <div className="flex-1 p-3 border rounded-lg">
+            <div className="w-[48%] p-4 border rounded-lg">
               <p className="font-medium text-sm">Feature Two</p>
               <p className="text-xs text-gray-500">Small detail</p>
             </div>
+
           </div>
 
         </div>
@@ -36,7 +38,7 @@ export default function TypeLockup() {
           <img
             src="/muffler1.jpg"
             alt="Preview"
-            className="w-full h-auto rounded-lg object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
 
