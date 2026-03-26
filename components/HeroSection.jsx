@@ -34,7 +34,7 @@ export default function TypeLockup() {
         {/* RIGHT */}
         <div className="w-full md:w-1/2">
           <img
-            src="/image.jpg"
+            src="/muffler1.jpg"
             alt="Preview"
             className="w-full h-auto rounded-lg object-cover"
           />
