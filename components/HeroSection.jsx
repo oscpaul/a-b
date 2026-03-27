@@ -1,49 +1,75 @@
-export default function TypeLockup() {
+// components/Hero.tsx
+'use client';
+
+import Image from 'next/image';
+
+export default function Hero() {
   return (
-    <section className="w-full h-screen">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row h-full">
-        
-        {/* LEFT */}
-        <div className="w-full md:w-1/2 flex flex-col h-full">
-          
-  {/* Top Row */}
-<div className="h-1/2 border border-transparent hover:border-black transition-colors flex items-center">
-  <div className="p-6">
-    <h2 className="text-3xl md:text-4xl font-semibold mb-3">
-      Your Headline Here
-    </h2>
-    <p className="text-gray-600">
-      Short supporting text goes here.
-    </p>
-  </div>
-</div>
+    <section className="min-h-screen bg-[#fbfdfb] text-gray-900 py-12 lg:py-24 w-full">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-{/* Bottom Row */}
-<div className="h-1/2 border border-transparent hover:border-black transition-colors flex items-center">
-  <div className="w-full flex gap-4 p-6">
-    <div className="flex-1 border rounded-lg p-4">
-      <p className="font-medium text-sm">Feature One</p>
-      <p className="text-xs text-gray-500">Small detail</p>
-    </div>
+          {/* Left Column - Headline + Features */}
+          <div className="flex flex-col justify-center order-1 lg:order-1 space-y-12">
 
-    <div className="flex-1 border rounded-lg p-4">
-      <p className="font-medium text-sm">Feature Two</p>
-      <p className="text-xs text-gray-500">Small detail</p>
-    </div>
-  </div>
-</div>
+            {/* Headline */}
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-gray-950">
+                Build amazing<br />
+                products with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">confidence</span>
+              </h1>
+              
+              <p className="text-xl text-gray-600 max-w-lg">
+                The modern toolkit that helps teams ship faster, 
+                collaborate better, and delight users.
+              </p>
+            </div>
+
+            {/* Hero Image - Shows only on mobile, right under headline */}
+            <div className="lg:hidden order-2 relative pt-4">
+              <div className="relative aspect-[4/3] w-full max-w-[620px] mx-auto">
+                <Image
+                  src="/hero-image.png"        // ← Replace with your actual image
+                  alt="Hero Dashboard Preview"
+                  fill
+                  className="object-contain rounded-3xl shadow-xl"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Features - Bottom on desktop, last on mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 lg:pt-8 order-3 lg:order-2">
+              <div className="bg-white border border-gray-100 rounded-3xl p-7 hover:shadow-md transition-all">
+                <h3 className="text-2xl font-semibold mb-3 text-gray-900">Lightning Fast</h3>
+                <p className="text-gray-600 text-lg">
+                  Optimized performance that loads in under 100ms and feels instant.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-100 rounded-3xl p-7 hover:shadow-md transition-all">
+                <h3 className="text-2xl font-semibold mb-3 text-gray-900">Enterprise Secure</h3>
+                <p className="text-gray-600 text-lg">
+                  Built with security and compliance in mind from day one.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hero Image - Desktop only (right side) */}
+          <div className="hidden lg:block order-2 lg:order-2 relative">
+            <div className="relative aspect-[4/3] lg:aspect-square w-full max-w-[680px] mx-auto">
+              <Image
+                src="/hero-image.png"
+                alt="Hero Dashboard Preview"
+                fill
+                className="object-contain rounded-3xl shadow-xl"
+                priority
+              />
+            </div>
+          </div>
 
         </div>
-
-        {/* RIGHT */}
-        <div className="w-full md:w-1/2 h-full">
-          <img
-            src="/muffler1.jpg"
-            alt="Preview"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
       </div>
     </section>
   );
