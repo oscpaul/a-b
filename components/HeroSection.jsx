@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="lg:hidden order-2 relative pt-4">
               <div className="relative aspect-[4/3] w-full max-w-[620px] mx-auto">
                 <Image
-                  src="/hero-image.png"        // ← Replace with your actual image
+                  src="/muffler1.png"        // ← Replace with your actual image
                   alt="Hero Dashboard Preview"
                   fill
                   className="object-contain rounded-3xl shadow-xl"
