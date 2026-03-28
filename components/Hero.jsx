@@ -12,6 +12,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+
+import { useRef, useState } from 'react';
+
+
+
+
+
 const DynamicSquareWidget = dynamic(
   () => Promise.resolve(() => (
     <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white">
@@ -29,10 +36,31 @@ const DynamicSquareWidget = dynamic(
 );
 
 const ReviewSidebar = () => {
+
+
+  const videoRef = useRef(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+  const videos = [
+    '/segment (5).mp4', // Replace with your video URLs
+    '/segment (17).mp4',
+    '/segment (19).mp4',
+  ];
+
+  const handleVideoEnd = () => {
+    if (currentVideoIndex < videos.length - 1) {
+      setCurrentVideoIndex(currentVideoIndex + 1);
+    } else {
+      // Loop back to the first video if needed, or stop
+      setCurrentVideoIndex(0); // Or stay at the last index
+    }
+  };
+
+
   return (
     <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white">
       {/* Left / Top Side - Headline + Carousel */}
-      <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="flex-1 flex flex-col items-center justify-left">
         <div className="w-full text-center lg:text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -43,9 +71,33 @@ const ReviewSidebar = () => {
           </motion.h1>
 
           {/* Swiper Carousel */}
-          <div className="w-full">
-       <Carousel/>
-    </div>
+<div className="relative w-full mb-6 flex flex-col md:flex-row rounded-xl overflow-hidden justify-center">
+  {/* Carousel */}
+  <div className="w-full md:w-[420px] aspect-[1] relative">
+    <Carousel />
+  </div>
+
+  {/* Video */}
+  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
+    {/* Paste your video logic here */}
+   <video
+      
+        ref={videoRef}
+        src={videos[currentVideoIndex]}
+        autoPlay // Muted is often required for autoplay to work
+        muted
+        playsInline
+        controls={false} // Set to true if you want controls
+        onEnded={handleVideoEnd}
+        // Ensure the video itself fills the container using object-cover
+        className="classname2 h-full w-full object-cover"
+        
+      >
+        Your browser does not support the video tag.
+        
+      </video>
+  </div>
+</div>
 
           {/* CTA Statement */}
           <p className="text-xl text-center md:text-2xl text-gray-700 mx-auto lg:mx-0">
@@ -55,7 +107,7 @@ const ReviewSidebar = () => {
       </div>
 
       {/* Right / Bottom Side - Iframe + Logos Below */}
-      <div className="w-full lg:w-[400px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
+      <div className="w-full lg:w-[300px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
         {/* Iframe Container - Responsive Height */}
         <div 
           className="w-full flex-shrink-0"
