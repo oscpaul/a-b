@@ -25,8 +25,8 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 bg-gray-50">
-      <div className="max-w-[1200px] mx-auto px-4">
+    <section id="services" className="py-16 bg-white">
+      <div className="mx-auto px-4">
 
         {/* Section Title */}
         <h2
