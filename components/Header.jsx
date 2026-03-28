@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 
 import { useEffect, useState } from "react"
 import { FiMenu, FiX } from "react-icons/fi"
@@ -47,6 +48,14 @@ export default function Header() {
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/maintenance">
             Maintenance
           </a>
+<Link
+  href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
+  target="_blank"
+  rel="noopener noreferrer nofollow"
+  className="book-now-btn"
+>
+  Book Now
+</Link>
         </nav>
 
         {/* Mobile Menu Button */}
