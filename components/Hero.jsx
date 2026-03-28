@@ -55,7 +55,7 @@ const ReviewSidebar = () => {
       </div>
 
       {/* Right / Bottom Side - Iframe + Logos Below */}
-      <div className="w-full lg:w-[300px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
+      <div className="w-full lg:w-[400px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
         {/* Iframe Container - Responsive Height */}
         <div 
           className="w-full flex-shrink-0"
