@@ -80,6 +80,17 @@ export default function Header() {
             <a className="text-gray-800 font-medium text-base" href="/maintenance">
               Maintenance
             </a>
+           <a
+  href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
+  target="_blank"
+  rel="noopener noreferrer nofollow"
+  className="book-now-btn mobile-book-btn"
+  style={{
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif',
+  }}
+>
+  Book Now
+</a>
           </nav>
         </div>
       )}
