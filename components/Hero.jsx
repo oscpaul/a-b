@@ -32,8 +32,8 @@ const ReviewSidebar = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white">
       {/* Left / Top Side - Headline + Carousel */}
-      <div className="flex-1 flex flex-col items-center justify-center p-6 md:p-12 lg:p-16">
-        <div className="max-w-3xl w-full text-center lg:text-left">
+      <div className="flex-1 flex flex-col items-center justify-center">
+        <div className="w-full text-center lg:text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const ReviewSidebar = () => {
     </div>
 
           {/* CTA Statement */}
-          <p className="text-xl md:text-2xl text-gray-700 max-w-lg mx-auto lg:mx-0">
+          <p className="text-xl text-center md:text-2xl text-gray-700 mx-auto lg:mx-0">
             Join thousands of happy customers who trust us every day.
           </p>
         </div>
@@ -67,20 +67,23 @@ const ReviewSidebar = () => {
         </div>
 
         {/* Logos Below the Iframe */}
-        <div className="p-6 flex justify-center gap-10 lg:gap-8 bg-white border-t border-gray-100">
-          <div className="flex flex-col items-center">
-            <img src="/yelp.svg" alt="Yelp" className="h-9 w-auto" />
-            <span className="text-xs text-gray-500 mt-1">Yelp</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/google.svg" alt="Google" className="h-9 w-auto" />
-            <span className="text-xs text-gray-500 mt-1">Google</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="/facebook.svg" alt="Facebook" className="h-9 w-auto" />
-            <span className="text-xs text-gray-500 mt-1">Facebook</span>
-          </div>
-        </div>
+        <div className="flex gap-6 justify-center mt-4">
+  {/* Yelp */}
+  <div className="flex flex-col items-center">
+    <img src="/yelp.png" alt="Yelp" className="h-6 w-auto" />
+    <span className="text-xs text-gray-500 mt-1">Yelp</span>
+  </div>
+
+<div className="flex flex-col items-center">
+    <img src="/google.png" alt="Google" className="h-6 w-auto" />
+    <span className="text-xs text-gray-500 mt-1">Google</span>
+  </div>
+  {/* Facebook */}
+  <div className="flex flex-col items-center">
+    <img src="/facebook.png" alt="Facebook" className="h-6 w-auto" />
+    <span className="text-xs text-gray-500 mt-1">Facebook</span>
+  </div>
+</div>
       </div>
     </div>
   );
