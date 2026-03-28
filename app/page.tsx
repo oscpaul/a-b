@@ -12,7 +12,7 @@ import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 flex flex-col items-center justify-center gap-6">
+    <main className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
       
       
       <HeroSection/>
