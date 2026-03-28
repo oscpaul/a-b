@@ -36,9 +36,7 @@ export default function SplitCarouselSection() {
       </div>
 
       {/* Lottie Animation */}
-      <div className="w-full max-w-md mt-4">
-        <Lottie animationData={animationData} loop autoplay className="w-full h-auto" />
-      </div>
+     
     </div>
 
       {/* Right side carousel */}
