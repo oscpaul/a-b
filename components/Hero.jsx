@@ -1,105 +1,120 @@
-// components/ReviewsSection.tsx
+// components/ReviewSidebar.tsx
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { motion } from 'framer-motion';
 
-export default function ReviewsSection() {
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+const DynamicSquareWidget = dynamic(
+  () => Promise.resolve(() => (
+    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white">
+      <iframe
+        src="https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV"
+        className="w-full h-full"
+        style={{ border: 'none' }}
+        title="Book Appointment"
+        allowFullScreen
+        scrolling="yes"
+      />
+    </div>
+  )),
+  { ssr: false }
+);
+
+const ReviewSidebar = () => {
   return (
-    <section className="py-20 bg-[#fbfdfb] text-gray-900 w-full">
-      <div className="w-full px-6 md:px-12 lg:px-16">
-        
-        {/* Top Headline */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-gray-950">
-            Loved by Our Customers
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don&apos;t just take our word for it. See what real people are saying about us.
-          </p>
-        </div>
-
-        {/* Middle: Full-width iframe with ticked (dashed) border */}
-        <div className="mb-20 w-full">
-          <div className="border-2 border-dashed border-gray-300 rounded-3xl p-6 md:p-10 bg-white shadow-sm">
-            <div className="w-full bg-gray-100 rounded-2xl overflow-hidden border border-gray-200 min-h-[420px] md:min-h-[520px] lg:min-h-[580px]">
-              {/* Your iframe embed goes here */}
-              <iframe
-                src="https://your-iframe-url-here.com" // ← REPLACE WITH YOUR ACTUAL IFRAME SRC
-                title="Customer Reviews Embed"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full rounded-2xl"
-                style={{ minHeight: '520px' }}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom: Social Review Logos + CTA */}
-        <div className="flex flex-col items-center">
-          <p className="text-gray-600 text-lg mb-12 text-center">
-            Trusted and reviewed on
-          </p>
-
-          {/* Review Logos */}
-          <div className="flex flex-wrap justify-center items-center gap-x-16 md:gap-x-24 gap-y-12 mb-16">
-            {/* Google Reviews */}
-            <div className="flex flex-col items-center">
-              <Image 
-                src="/logos/google-reviews.svg" 
-                alt="Google Reviews" 
-                width={180} 
-                height={60} 
-                className="h-12 w-auto"
-              />
-              <span className="text-sm text-gray-500 mt-3">4.9 ★★★★★</span>
-            </div>
-
-            {/* Yelp */}
-            <div className="flex flex-col items-center">
-              <Image 
-                src="/logos/yelp.svg" 
-                alt="Yelp" 
-                width={150} 
-                height={60} 
-                className="h-12 w-auto"
-              />
-              <span className="text-sm text-gray-500 mt-3">5.0 ★★★★★</span>
-            </div>
-
-            {/* Facebook */}
-            <div className="flex flex-col items-center">
-              <Image 
-                src="/logos/facebook.svg" 
-                alt="Facebook" 
-                width={150} 
-                height={60} 
-                className="h-12 w-auto"
-              />
-              <span className="text-sm text-gray-500 mt-3">Excellent</span>
-            </div>
-          </div>
-
-          {/* CTA Button to Leave a Google Review */}
-          <Link 
-            href="https://g.page/your-business/review" // ← Replace with your actual Google review link
-            target="_blank"
-            className="group inline-flex items-center gap-4 bg-gray-900 hover:bg-black text-white font-semibold px-12 py-5 rounded-2xl text-xl transition-all active:scale-[0.98]"
+    <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white">
+      {/* Left / Top Side - Headline + Carousel */}
+      <div className="flex-1 flex flex-col items-center justify-center p-6 md:p-12 lg:p-16">
+        <div className="max-w-3xl w-full text-center lg:text-left">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-10"
           >
-            Leave us a Google Review
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="w-6 h-6 group-hover:translate-x-1 transition-transform" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
+            Loved by Real Customers
+          </motion.h1>
+
+          {/* Swiper Carousel */}
+          <div className="mb-12">
+            <Swiper
+              modules={[Autoplay, Pagination, Navigation]}
+              spaceBetween={20}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
+              pagination={{ clickable: true }}
+              navigation={true}
+              className="rounded-2xl overflow-hidden shadow-md"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7-7 7M5 12h14" />
-            </svg>
-          </Link>
+              <SwiperSlide>
+                <img 
+                  src="/2brothers_2mb.jpg" 
+                  alt="Customer Review 1" 
+                  className="w-full h-[320px] md:h-[420px] object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img 
+                  src="/2brother1_2mb.jpg" 
+                  alt="Customer Review 2" 
+                  className="w-full h-[320px] md:h-[420px] object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img 
+                  src="/muffler3.png" 
+                  alt="Customer Review 3" 
+                  className="w-full h-[320px] md:h-[420px] object-cover"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          {/* CTA Statement */}
+          <p className="text-xl md:text-2xl text-gray-700 max-w-lg mx-auto lg:mx-0">
+            Join thousands of happy customers who trust us every day.
+          </p>
         </div>
       </div>
-    </section>
+
+      {/* Right / Bottom Side - Iframe + Logos Below */}
+      <div className="w-full lg:w-[300px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
+        {/* Iframe Container - Responsive Height */}
+        <div 
+          className="w-full flex-shrink-0"
+          style={{ height: '500px' }}           // Mobile default
+        >
+          <div className="h-full lg:h-[50vh]">
+            <DynamicSquareWidget />
+          </div>
+        </div>
+
+        {/* Logos Below the Iframe */}
+        <div className="p-6 flex justify-center gap-10 lg:gap-8 bg-white border-t border-gray-100">
+          <div className="flex flex-col items-center">
+            <img src="/yelp.svg" alt="Yelp" className="h-9 w-auto" />
+            <span className="text-xs text-gray-500 mt-1">Yelp</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/google.svg" alt="Google" className="h-9 w-auto" />
+            <span className="text-xs text-gray-500 mt-1">Google</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/facebook.svg" alt="Facebook" className="h-9 w-auto" />
+            <span className="text-xs text-gray-500 mt-1">Facebook</span>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default ReviewSidebar;
