@@ -12,8 +12,8 @@ export default function AboutSection() {
   return (
     <section
       style={{
+        backgroundColor:"#fbfdfb",
         padding: "30px 5%",
-        maxWidth: "1200px",
         margin: "0 auto",
         textAlign: "center",
         boxSizing: "border-box",
