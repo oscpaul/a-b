@@ -69,7 +69,7 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-       <div className="md:hidden bg-white shadow-md">
+    <div className="md:hidden bg-white shadow-md">
   <nav className="flex flex-col px-5 py-4 space-y-3">
     <a 
       className="text-gray-800 font-medium text-base py-2" 
@@ -90,16 +90,14 @@ export default function Header() {
       Maintenance
     </a>
 
-    {/* Book Now Button - Now matches the other links in size */}
+    {/* Book Now Button - Matches width of other items */}
     <a
       href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className="mt-2 inline-flex items-center justify-center
-                 bg-transparent border-2 border-[#006aff] 
-                 text-[#006aff] font-medium text-base
-                 h-11 px-6 rounded-xl transition-all duration-300
-                 hover:bg-[#006aff] hover:text-white active:scale-95"
+      className="text-[#006aff] font-medium text-base py-2 px-5 border border-[#006aff] 
+                 rounded-lg hover:bg-[#006aff] hover:text-white transition-all 
+                 inline-block w-fit"
       style={{
         fontFamily: '-apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif',
       }}
