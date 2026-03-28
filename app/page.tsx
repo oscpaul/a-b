@@ -19,8 +19,7 @@ export default function Home() {
         <Services/>
       <AboutSection/>
   
-          <Hero/>
-      <CTA/>
+    
 <LocationSection/>
 
             <Footer/>
