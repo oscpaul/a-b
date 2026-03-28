@@ -25,10 +25,10 @@ export default function SplitCarouselSection() {
   }, [])
 
   return (
-    <section style={container}>
+    <section className="max-w-none">
       
       {/* Left side headline */}
-  <div className="flex flex-col items-center gap-4 text-center">
+  <div className="p-0 flex flex-col items-center text-center">
       {/* Headline */}
       <div>
         <h2 className="text-3xl md:text-4xl font-bold">Two Brothers Auto/Muffler Service</h2>
@@ -46,6 +46,8 @@ export default function SplitCarouselSection() {
             modules={[Autoplay]}
             slidesPerView={1}
             loop
+              centeredSlides={true}   // 👈 add this
+
             autoplay={{ delay: 3000 }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             style={{ width: "100%", height: "100%", overflow: "hidden" }}
@@ -74,7 +76,6 @@ const container = {
   flexDirection: "row", // horizontal on desktop
   alignItems: "center",
   justifyContent: "space-between",
-  gap: "24px",
   flexWrap: "wrap",      // allows vertical stacking on small screens
   padding: "10px",
     
@@ -103,7 +104,8 @@ const carouselWrapper = {
   flex: "1 1 0px",      // flexible but max width
   minWidth: "300px",
   display: "flex",
-  justifyContent: "right",
+  justifyContent: "center",
+  padding: "0px"
   
 }
 
