@@ -40,13 +40,13 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/muffler-service">
-            Muffler Service
+            Muffler Repair
           </a>
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/suspension-service">
-            Suspension and Brakes
+            Ride and Handling
           </a>
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/maintenance">
-            Maintenance
+            Brakes, Maintenance, Oil Change
           </a>
 <Link
   href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
@@ -75,19 +75,19 @@ export default function Header() {
       className="text-gray-800 font-medium text-base py-2" 
       href="/muffler-service"
     >
-      Muffler Service
+      Muffler Repair
     </a>
     <a 
       className="text-gray-800 font-medium text-base py-2" 
       href="/suspension-service"
     >
-      Suspension and Brakes
+      Ride and Handling
     </a>
     <a 
       className="text-gray-800 font-medium text-base py-2" 
       href="/maintenance"
     >
-      Maintenance
+      Brakes, Maintenance, Oil Change
     </a>
 
     {/* Book Now Button - Matches width of other items */}
