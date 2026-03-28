@@ -18,7 +18,7 @@ export default function Home() {
       <HeroSection/>
         <Services/>
       <AboutSection/>
-  
+   <Hero/>
     
 <LocationSection/>
 
