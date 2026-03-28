@@ -10,14 +10,14 @@ export default function Services() {
         "A properly functioning muffler is essential for reducing noise, improving exhaust flow, and keeping your vehicle running efficiently. At 2 Brothers Auto & Muffler, we provide expert muffler repair and replacement for all makes and models.",
     },
     {
-      title: "Routine Maintenance",
+      title: "Routine Brakes, Maintenance, Oil Change, Undercoating",
             link : "/maintenance",
       img: "/brakes-1.png",
       description:
         "Maintaining your brakes and suspension is essential for safety, comfort, and vehicle performance. At 2 Brothers Auto & Muffler, we provide comprehensive brake and suspension inspections and repairs to keep your car driving smoothly.",
     },
     {
-      title: "Suspension Repair",
+      title: "Ride and Handling",
                   link : "/suspension-service",
       img: "diagnostics-1.png",
       description: "Examine suspension components including shocks, struts, springs, and control arms.",
