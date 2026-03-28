@@ -43,40 +43,9 @@ const ReviewSidebar = () => {
           </motion.h1>
 
           {/* Swiper Carousel */}
-          <div className="mb-12">
-            <Swiper
-              modules={[Autoplay, Pagination, Navigation]}
-              spaceBetween={20}
-              slidesPerView={1}
-              loop={true}
-              autoplay={{ delay: 4000, disableOnInteraction: false }}
-              pagination={{ clickable: true }}
-              navigation={true}
-              className="rounded-2xl overflow-hidden shadow-md"
-            >
-              <SwiperSlide>
-                <img 
-                  src="/2brothers_2mb.jpg" 
-                  alt="Customer Review 1" 
-                  className="w-full h-[320px] md:h-[420px] object-cover"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img 
-                  src="/2brother1_2mb.jpg" 
-                  alt="Customer Review 2" 
-                  className="w-full h-[320px] md:h-[420px] object-cover"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img 
-                  src="/muffler3.png" 
-                  alt="Customer Review 3" 
-                  className="w-full h-[320px] md:h-[420px] object-cover"
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
+          <div className="w-full">
+       <Carousel/>
+    </div>
 
           {/* CTA Statement */}
           <p className="text-xl md:text-2xl text-gray-700 max-w-lg mx-auto lg:mx-0">
