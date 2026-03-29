@@ -31,9 +31,9 @@ export default function Hero() {
 
       {/* Headline Column - Desktop right, mobile top */}
       <div className="flex flex-col justify-center order-1 lg:order-2 space-y-6">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-gray-950">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-normal text-gray-950">
           Build amazing<br />
-          products with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">confidence</span>
+          products with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">confidence.</span>
         </h1>
         <p className="text-xl text-gray-600 max-w-lg">
           The modern toolkit that helps teams ship faster, collaborate better, and delight users.
