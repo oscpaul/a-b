@@ -10,16 +10,18 @@ import CTA from "../components/CTA"
 import LocationSection from "../components/LocationSection"
 import Footer from "../components/Footer"
 
+import BFCacheFix from "@/components/BFCacheFix";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white flex flex-col items-center justify-center">
-      
+            <BFCacheFix />   {/* ← Add this line */}
+
       
       <HeroSection/>
         <Services/>
       <AboutSection/>
    <Hero/>
-          <BFCacheFix />   {/* ← Add this line */}
 
 <LocationSection/>
 
