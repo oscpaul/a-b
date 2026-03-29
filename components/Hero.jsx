@@ -37,6 +37,7 @@ const DynamicSquareWidget = dynamic(
 );
 
 const ReviewSidebar = () => {
+  const videoRef = useRef(null);
 
 
   useEffect(() => {
@@ -59,7 +60,6 @@ const ReviewSidebar = () => {
 
   }, []);
   
-  const videoRef = useRef(null);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const videos = [
