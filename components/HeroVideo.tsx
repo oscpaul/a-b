@@ -3,11 +3,8 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
-export default function BackgroundVideo({
-  videos,
-  currentVideoIndex,
-}: {
-  videos: string[];
+export default function BackgroundVideo({ videos, currentVideoIndex }: { 
+  videos: string[]; 
   currentVideoIndex: number;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -17,42 +14,36 @@ export default function BackgroundVideo({
     const video = videoRef.current;
     if (!video) return;
 
-    const restartVideo = async () => {
+    // Force a full reset on mobile when returning via back button
+    const resetAndPlay = async () => {
+      video.pause();                    // Stop any old playback
+      video.src = videos[currentVideoIndex]; // Re-assign source
+      video.load();                     // Critical for Safari after navigation
+
       try {
-        // Force reload the current source
-        video.src = videos[currentVideoIndex];
-        video.load(); // Important for mobile after navigation
-
-        // Small delay helps on iOS/Safari after back navigation
-        await new Promise((resolve) => setTimeout(resolve, 50));
-
+        await new Promise(resolve => setTimeout(resolve, 30)); // tiny delay helps iOS
         await video.play();
-      } catch (err) {
-        console.warn("Video autoplay failed on mobile:", err);
-        // Fallback: try again after user interaction if needed
+      } catch (e) {
+        console.warn("Video play failed after remount:", e);
       }
     };
 
-    // Restart when returning to the page or video changes
-    restartVideo();
+    resetAndPlay();
 
-    // Cleanup on unmount / route change
     return () => {
       video.pause();
-      // Optional: video.src = ''; // can help free memory on some devices
     };
-  }, [videos, currentVideoIndex, pathname]);
+  }, [pathname, videos, currentVideoIndex]);
 
   return (
-<video
+   <video
       
        ref={videoRef}
         src="/Adobe Express - segment (5).mp4"
         autoPlay // Muted is often required for autoplay to work
         muted
-         key={pathname}
          loop
-      preload="metadata"   // Better than "auto" on mobile (saves data/battery)
+        preload="auto"
         playsInline
         controls={false} // Set to true if you want controls
         // Ensure the video itself fills the container using object-cover
