@@ -38,14 +38,27 @@ const DynamicSquareWidget = dynamic(
 
 const ReviewSidebar = () => {
 
-useEffect(() => {
-  const video = videoRef.current;
 
-  if (video) {
-    video.load(); // reloads the video
-    video.play().catch(() => {});
-  }
-}, []);
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    // Try to play when component mounts / page returns
+    const playVideo = async () => {
+      try {
+        await video.play();
+      } catch (err) {
+        console.log("Autoplay prevented:", err);
+      }
+    };
+
+    // Reload + play (helps fix mobile freezing)
+    video.load();
+    playVideo();
+
+  }, []);
+  
   const videoRef = useRef(null);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
