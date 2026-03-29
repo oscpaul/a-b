@@ -38,7 +38,14 @@ const DynamicSquareWidget = dynamic(
 
 const ReviewSidebar = () => {
 
+useEffect(() => {
+  const video = videoRef.current;
 
+  if (video) {
+    video.load(); // reloads the video
+    video.play().catch(() => {});
+  }
+}, []);
   const videoRef = useRef(null);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
