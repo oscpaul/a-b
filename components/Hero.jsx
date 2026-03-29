@@ -92,6 +92,7 @@ const pathname = usePathname();
       
        
         src={videos[0]}
+      ref={videoRef}
         autoPlay // Muted is often required for autoplay to work
         muted
          key={pathname}
