@@ -1,3 +1,10 @@
+"use client";
+
+import { useEffect } from "react";
+
+
+
+
 import "./globals.css"
 import Header from "../components/Header"
 import { ReactNode } from "react"
@@ -12,6 +19,27 @@ const poppins = Poppins({
 
 export default function RootLayout({children}:{children:ReactNode}) {
 
+
+export default function BFCacheFix() {
+  useEffect(() => {
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        // Page was restored from bfcache → force fresh reload
+        window.location.reload();
+      }
+    };
+
+    window.addEventListener("pageshow", handlePageShow);
+
+    return () => {
+      window.removeEventListener("pageshow", handlePageShow);
+    };
+  }, []);
+
+  return null; // This component does nothing visible
+}
+
+  
   return (
     <html lang="en">
       <head>
