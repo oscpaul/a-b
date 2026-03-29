@@ -11,6 +11,7 @@ import Carousel from "./Carousel"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { usePathname } from "next/navigation";
 
 
 import { useRef, useState } from 'react';
@@ -21,7 +22,7 @@ import { useRef, useState } from 'react';
 
 const DynamicSquareWidget = dynamic(
   () => Promise.resolve(() => (
-    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white align-center">
+    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white">
       <iframe
         src="https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV"
         className="w-full h-full"
@@ -56,9 +57,10 @@ const ReviewSidebar = () => {
     }
   };
 
+const pathname = usePathname();
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white justify-center">
+    <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white align-center">
       {/* Left / Top Side - Headline + Carousel */}
       <div className="flex-1 flex flex-col items-center justify-left">
         <div className="w-full text-center lg:text-center">
@@ -67,11 +69,11 @@ const ReviewSidebar = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-10"
           >
-           Where Quality Work Meets Local Trust
+            Loved by Real Customers
           </motion.h1>
 
           {/* Swiper Carousel */}
-<div className="relative w-full mb-6 flex flex-col md:flex-row rounded-xl overflow-hidden justify-center">
+<div className="relative w-full mb-6 flex flex-col md:flex-row rounded-xl overflow-hidden ">
   {/* Carousel */}
   <div className="w-full md:w-[420px] aspect-[1] relative">
     <Carousel />
@@ -82,10 +84,13 @@ const ReviewSidebar = () => {
     {/* Paste your video logic here */}
    <video
       
-        ref={videoRef}
+       
         src={videos[currentVideoIndex]}
         autoPlay // Muted is often required for autoplay to work
         muted
+         key={pathname}
+         loop
+        preload="auto"
         playsInline
         controls={false} // Set to true if you want controls
         onEnded={handleVideoEnd}
@@ -101,7 +106,8 @@ const ReviewSidebar = () => {
 
           {/* CTA Statement */}
           <p className="text-xl text-center md:text-2xl text-gray-700 mx-auto lg:mx-0">
-Have Questions? Text Us — We’ll Help Fast          </p>
+            Have Questions? Text Us — We’ll Help Fast
+          </p>
         </div>
       </div>
 
