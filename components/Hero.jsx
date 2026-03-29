@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 import { usePathname } from "next/navigation";
 
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 
 
