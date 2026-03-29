@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import Carousel from "./Carousel"
+import HeroVideo from "./HeroVideo"
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -14,7 +16,7 @@ import 'swiper/css/navigation';
 import { usePathname } from "next/navigation";
 
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 
 
 
@@ -37,44 +39,10 @@ const DynamicSquareWidget = dynamic(
 );
 
 const ReviewSidebar = () => {
-  const videoRef = useRef(null);
 
 
-  useEffect(() => {
-    const video = videoRef.current;
-
-    if (!video) return;
-
-    // Try to play when component mounts / page returns
-    const playVideo = async () => {
-      try {
-        await video.play();
-      } catch (err) {
-        console.log("Autoplay prevented:", err);
-      }
-    };
-
-    // Reload + play (helps fix mobile freezing)
-    video.load();
-    playVideo();
-
-  }, []);
   
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-
-  const videos = [
-    '/Adobe Express - segment (5).mp4', // Replace with your video URLs
-
-  ];
-
-  const handleVideoEnd = () => {
-    if (currentVideoIndex < videos.length - 1) {
-      setCurrentVideoIndex(currentVideoIndex + 1);
-    } else {
-      // Loop back to the first video if needed, or stop
-      setCurrentVideoIndex(0); // Or stay at the last index
-    }
-  };
+ 
 
 const pathname = usePathname();
 
@@ -101,25 +69,7 @@ const pathname = usePathname();
   {/* Video */}
   <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
     {/* Paste your video logic here */}
-   <video
-      
-       
-        src={videos[0]}
-      ref={videoRef}
-        autoPlay // Muted is often required for autoplay to work
-        muted
-         key={pathname}
-         loop
-        preload="auto"
-        playsInline
-        controls={false} // Set to true if you want controls
-        // Ensure the video itself fills the container using object-cover
-        className="classname2 h-full w-full object-cover"
-        
-      >
-        Your browser does not support the video tag.
-        
-      </video>
+<HeroVideo />
   </div>
 </div>
 
