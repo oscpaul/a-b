@@ -67,7 +67,7 @@ const ReviewSidebar = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-10"
           >
-            Loved by Real Customers
+           Where Quality Work Meets Local Trust
           </motion.h1>
 
           {/* Swiper Carousel */}
