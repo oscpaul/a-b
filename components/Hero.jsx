@@ -21,7 +21,7 @@ import { useRef, useState } from 'react';
 
 const DynamicSquareWidget = dynamic(
   () => Promise.resolve(() => (
-    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white">
+    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white justify-center">
       <iframe
         src="https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV"
         className="w-full h-full"
@@ -58,7 +58,7 @@ const ReviewSidebar = () => {
 
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white">
+    <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white justify-center">
       {/* Left / Top Side - Headline + Carousel */}
       <div className="flex-1 flex flex-col items-center justify-left">
         <div className="w-full text-center lg:text-center">
