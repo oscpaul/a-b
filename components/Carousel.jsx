@@ -30,10 +30,7 @@ export default function SplitCarouselSection() {
       {/* Left side headline */}
   <div className="p-0 flex flex-col items-center text-center">
       {/* Headline */}
-      <div>
-        <h2 className="text-3xl md:text-4xl font-bold">Two Brothers Auto/Muffler Service</h2>
-       
-      </div>
+   
 
       {/* Lottie Animation */}
      
