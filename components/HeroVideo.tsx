@@ -1,51 +1,50 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { usePathname } from "next/navigation"; // or from 'next/router' in Pages Router
+import { usePathname } from "next/navigation";
 
-  const videos = [
-    '/Adobe Express - segment (5).mp4', // Replace with your video URLs
-
-  ];
-export default function BackgroundVideo({ videos, currentVideoIndex }: { 
-  videos: string[]; 
+export default function BackgroundVideo({
+  videos,
+  currentVideoIndex,
+}: {
+  videos: string[];
   currentVideoIndex: number;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const pathname = usePathname();
 
-
-
-
-
-
-
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Reset and play the video when the component mounts or route changes
-    const playVideo = async () => {
+    const restartVideo = async () => {
       try {
-        video.src = videos[currentVideoIndex]; // ensure source is set
-        video.load(); // force reload the new source if it changed
-        await video.play(); // explicitly play (handles autoplay restrictions better)
+        // Force reload the current source
+        video.src = videos[currentVideoIndex];
+        video.load(); // Important for mobile after navigation
+
+        // Small delay helps on iOS/Safari after back navigation
+        await new Promise((resolve) => setTimeout(resolve, 50));
+
+        await video.play();
       } catch (err) {
-        console.warn("Video play failed (user interaction may be required):", err);
+        console.warn("Video autoplay failed on mobile:", err);
+        // Fallback: try again after user interaction if needed
       }
     };
 
-    playVideo();
+    // Restart when returning to the page or video changes
+    restartVideo();
 
-    // Optional: Cleanup when unmounting (helps prevent memory issues)
+    // Cleanup on unmount / route change
     return () => {
       video.pause();
-      // Do NOT set src = '' here unless you want to fully unload
+      // Optional: video.src = ''; // can help free memory on some devices
     };
-  }, [videos, currentVideoIndex, pathname]); // Re-run when video changes or route changes
+  }, [videos, currentVideoIndex, pathname]);
 
   return (
-   <video
+<video
       
        ref={videoRef}
         src="/Adobe Express - segment (5).mp4"
@@ -53,7 +52,7 @@ export default function BackgroundVideo({ videos, currentVideoIndex }: {
         muted
          key={pathname}
          loop
-        preload="auto"
+      preload="metadata"   // Better than "auto" on mobile (saves data/battery)
         playsInline
         controls={false} // Set to true if you want controls
         // Ensure the video itself fills the container using object-cover
