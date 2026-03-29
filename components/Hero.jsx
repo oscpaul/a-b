@@ -21,7 +21,7 @@ import { useRef, useState } from 'react';
 
 const DynamicSquareWidget = dynamic(
   () => Promise.resolve(() => (
-    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white gap-20">
+    <div className="h-full border-2 border-gray-300 rounded-2xl overflow-hidden shadow-inner bg-white">
       <iframe
         src="https://square.site/appointments/buyer/widget/2pefuflo2hw9e3/LCTHN7ABYT9JV"
         className="w-full h-full"
@@ -106,7 +106,7 @@ Have Questions? Text Us — We’ll Help Fast          </p>
       </div>
 
       {/* Right / Bottom Side - Iframe + Logos Below */}
-      <div className="w-full lg:w-[400px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
+      <div className="w-full lg:w-[400px]  justify-center flex-shrink-0  bg-white flex flex-col">
         {/* Iframe Container - Responsive Height */}
         <div 
           className="w-full flex-shrink-0"
