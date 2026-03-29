@@ -101,8 +101,7 @@ const ReviewSidebar = () => {
 
           {/* CTA Statement */}
           <p className="text-xl text-center md:text-2xl text-gray-700 mx-auto lg:mx-0">
-            Join thousands of happy customers who trust us every day.
-          </p>
+Have Questions? Text Us — We’ll Help Fast          </p>
         </div>
       </div>
 
