@@ -43,9 +43,8 @@ const ReviewSidebar = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const videos = [
-    '/segment (5).mp4', // Replace with your video URLs
-    '/segment (17).mp4',
-    '/segment (19).mp4',
+    '/Adobe Express - segment (5).mp4', // Replace with your video URLs
+
   ];
 
   const handleVideoEnd = () => {
