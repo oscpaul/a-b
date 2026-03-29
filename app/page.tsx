@@ -19,7 +19,8 @@ export default function Home() {
         <Services/>
       <AboutSection/>
    <Hero/>
-    
+          <BFCacheFix />   {/* ← Add this line */}
+
 <LocationSection/>
 
             <Footer/>
