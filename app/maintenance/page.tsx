@@ -19,38 +19,53 @@ export default function MaintenancePage() {
   return (
    <div className="font-sans">
   {/* Hero Section - Big Background with Video/Image */}
-  <section className="relative h-screen flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0 bg-black/50 z-10"></div>
-    
-    {/* Replace with your video or image */}
-    <video 
-      autoPlay 
-      muted 
-      loop 
-      playsInline 
-      className="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src="/your-hero-video.mp4" type="video/mp4" />
-    </video>
+     
+<section className="relative min-h-[100vh] md:h-screen flex items-center justify-center overflow-hidden">
+  
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60 md:bg-black/50 z-10"></div>
+  
+  {/* Hero Video */}
+  <video 
+    autoPlay 
+    muted 
+    loop 
+    playsInline 
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/your-hero-video.mp4" type="video/mp4" />
+  </video>
 
-    <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-      <h1 className="text-6xl md:text-7xl font-bold tracking-tighter text-white leading-tight mb-6 font-serif">
-        We Create Digital<br />Experiences That Matter
-      </h1>
-      <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:+1234567890" className="bg-white text-gray-900 px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition">
-          Call Us Now
-        </a>
-        <button className="border border-white/80 text-white px-10 py-4 rounded-2xl font-medium text-lg hover:bg-white/10 transition">
-          Watch Video
-        </button>
-      </div>
+  {/* Content */}
+  <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-12 pb-16 md:pt-0">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6 font-serif">
+      We Create Digital<br />Experiences That Matter
+    </h1>
+    
+    <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href="tel:+1234567890" 
+        className="bg-white text-gray-900 px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition-all active:scale-95"
+      >
+        Call Us Now
+      </a>
+      <button className="border border-white/80 text-white px-10 py-4 rounded-2xl font-medium text-lg hover:bg-white/10 transition-all active:scale-95">
+        Watch Video
+      </button>
     </div>
-  </section>
+  </div>
+
+  {/* Optional scroll indicator for mobile */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:hidden">
+    <div className="w-6 h-10 border-2 border-white/60 rounded-full flex items-center justify-center">
+      <div className="w-1 h-2 bg-white/70 rounded-full animate-scroll-down"></div>
+    </div>
+  </div>
+</section>
 
   {/* Features / Services Section */}
   <section className="py-24 bg-white">
