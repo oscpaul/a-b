@@ -94,11 +94,13 @@ export default function MaintenancePage() {
       <div className="grid md:grid-cols-2 gap-8">
   <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
     {/* Paste your video logic here */}
-<HeroVideo />
+<HeroVideo  src="/27C6DF7E-795A-4C5C-9864-52DC4019C1BD.mp4"/>
+
   </div>  
   <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
       {/* Paste your video logic here */}
-  <HeroVideo />
+  <HeroVideo  src="/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.mp4"/>
+
     </div>
       </div>
     </div>
