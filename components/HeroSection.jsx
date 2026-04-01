@@ -38,7 +38,7 @@ export default function Hero() {
 
           {/* Call Button */}
           <a 
-            href="tel:+1234567890"
+            href="tel:+16302297330"
             className="group border border-white/80 hover:border-white text-white px-10 py-4 rounded-2xl font-medium text-lg transition-all duration-200 hover:bg-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-3 mx-auto"
           >
             <span className="md:hidden">📞</span>
