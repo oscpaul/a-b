@@ -1,148 +1,138 @@
-"use client";
+// app/services/maintenance/page.tsx
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import HeroVideo from "@/components/HeroVideo"
 
-import Head from "next/head";
-
-const mufflerService = {
-  title: "Muffler Repair & Replacement",
-overview:
-  "Your muffler plays a critical role in controlling noise, maintaining proper exhaust flow, and protecting your engine’s performance. In the Chicago area, muffler service is especially important due to harsh winters, road salt, and constant moisture exposure. These conditions accelerate rust and corrosion in your exhaust system. At 2 Brothers Auto & Muffler in Addison, IL, we provide expert muffler repair and replacement to keep your vehicle running efficiently, quietly, and safely year-round.",
-  details: [
-    {
-      text: "Inspect and diagnose muffler and exhaust system issues.",
-      img: "muffer-repair-in-victorville.webp",
-    },
-    {
-      text: "Repair or replace damaged mufflers to restore proper function.",
-      img: "muffler-repair.jpg",
-    },
-    {
-      text: "Check exhaust pipes, hangers, and clamps for wear or damage.",
-      img: "exhaust-muffler-repair-service.webp",
-    },
-  ],
-faq: [
-  {
-    question: "What are common signs my muffler needs replacement?",
-    answer:
-      "Loud exhaust noise, rattling under the vehicle, or visible rust are common signs your muffler may be failing.",
+export const metadata: Metadata = {
+  title: 'Routine Maintenance Services | Oil Change, Brakes & Undercoating in Addison',
+  description: 'Expert brake service, oil changes, routine maintenance, and undercoating at 2 Brothers Auto Service in Addison, IL. Honest pricing, fast service, and trusted technicians.',
+  keywords: ['oil change Addison', 'brake service Addison', 'car maintenance Addison', 'undercoating Illinois', 'routine maintenance'],
+  openGraph: {
+    title: 'Routine Maintenance Services - 2 Brothers Auto Service',
+    description: 'Keep your vehicle safe and reliable with professional brake, oil change, and undercoating services in Addison.',
+    images: [{ url: '/images/maintenance-hero.jpg' }], // replace with your actual image
   },
-  {
-    question: "Can a bad muffler affect fuel efficiency?",
-    answer:
-      "Yes. A damaged or restricted muffler can disrupt exhaust flow, forcing your engine to work harder and reducing fuel efficiency.",
-  },
-  {
-    question: "Why is muffler service important in the Chicago area?",
-    answer:
-      "Chicago winters expose vehicles to road salt, moisture, and temperature swings, all of which accelerate rust and corrosion in the exhaust system. Regular muffler inspections help prevent leaks and costly repairs.",
-  },
-],
 };
 
-export default function MufflerRepair() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        name: mufflerService.title,
-        description: mufflerService.overview,
-        provider: {
-          "@type": "Organization",
-          name: "2 Brothers Auto & Muffler",
-          address: { "@type": "PostalAddress", streetAddress: "Addison, IL" },
-        },
-        areaServed: [
-          { "@type": "City", name: "Addison" },
-          { "@type": "City", name: "Elmhurst" },
-          { "@type": "City", name: "Bensenville" },
-          { "@type": "City", name: "Villa Park" },
-          { "@type": "City", name: "Lombard" },
-          { "@type": "City", name: "Chicago" },
-        ],
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: mufflerService.faq.map((f) => ({
-          "@type": "Question",
-          name: f.question,
-          acceptedAnswer: { "@type": "Answer", text: f.answer },
-        })),
-      },
-    ],
-  };
-
+export default function MaintenancePage() {
   return (
-    <>
-      <Head>
-        <title>Muffler Repair | 2 Brothers Auto & Muffler, Addison, IL</title>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
+   <div className="font-sans">
+  {/* Hero Section - Big Background with Video/Image */}
+  <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <div className="absolute inset-0 bg-black/50 z-10"></div>
+    
+    {/* Replace with your video or image */}
+    <video 
+      autoPlay 
+      muted 
+      loop 
+      playsInline 
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="/your-hero-video.mp4" type="video/mp4" />
+    </video>
 
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-[1200px] mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-8 text-center">
-            {mufflerService.title}
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-700 mb-16 text-center">
-            {mufflerService.overview}
-          </p>
+    <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+      <h1 className="text-6xl md:text-7xl font-bold tracking-tighter text-white leading-tight mb-6 font-serif">
+        We Create Digital<br />Experiences That Matter
+      </h1>
+      <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+1234567890" className="bg-white text-gray-900 px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition">
+          Call Us Now
+        </a>
+        <button className="border border-white/80 text-white px-10 py-4 rounded-2xl font-medium text-lg hover:bg-white/10 transition">
+          Watch Video
+        </button>
+      </div>
+    </div>
+  </section>
 
-          {/* Details Section */}
-          <div className="space-y-12">
-            {mufflerService.details.map((detail, i) => (
-              <div
-                key={i}
-                className={`flex flex-col lg:flex-row items-center gap-6 ${
-                  i % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Image */}
-                <div className="flex-1">
-                  <img
-                    src={detail.img}
-                    alt="Muffler service image"
-                    className="w-full aspect-square object-cover rounded-lg shadow-md"
-                  />
-                </div>
+  {/* Features / Services Section */}
+  <section className="py-24 bg-white">
+    <div className="max-w-6xl mx-auto px-6">
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-4">Our Services</h2>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+        </p>
+      </div>
 
-                {/* Text */}
-                <div className="flex-1">
-                  <p className="text-lg sm:text-xl font-semibold">{detail.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Why Choose Us */}
-          <div className="mt-16 text-center">
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
-              Why Choose 2 Brothers Auto & Muffler
-            </h2>
-         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
-  Serving Addison, Elmhurst, Bensenville, Villa Park, Lombard, and Chicago, we specialize in diagnosing and repairing rust-damaged exhaust systems caused by Midwest weather. Our team delivers fast, reliable muffler service using quality parts built to withstand harsh conditions.
-</p>
-          </div>
-
-          {/* FAQ Section */}
-          <div className="mt-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 text-center">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-6 max-w-2xl mx-auto">
-              {mufflerService.faq.map((f, i) => (
-                <div key={i} className="border rounded-lg p-4">
-                  <h3 className="font-semibold text-xl mb-2">{f.question}</h3>
-                  <p className="text-gray-700">{f.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className="grid md:grid-cols-3 gap-10">
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto bg-blue-100 rounded-3xl flex items-center justify-center text-4xl mb-6">🚀</div>
+          <h3 className="text-2xl font-semibold mb-3">Web Development</h3>
+          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
         </div>
-      </section>
-    </>
+        
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto bg-emerald-100 rounded-3xl flex items-center justify-center text-4xl mb-6">📹</div>
+          <h3 className="text-2xl font-semibold mb-3">Video Production</h3>
+          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+        
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto bg-purple-100 rounded-3xl flex items-center justify-center text-4xl mb-6">📈</div>
+          <h3 className="text-2xl font-semibold mb-3">Digital Marketing</h3>
+          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Video Section */}
+  <section className="py-24 bg-gray-50">
+    <div className="max-w-5xl mx-auto px-6">
+      <div className="text-center mb-12">
+        <h2 className="text-5xl font-bold tracking-tight text-gray-900">See Our Work</h2>
+      </div>
+      {/* Add your videos here */}
+      <div className="grid md:grid-cols-2 gap-8">
+  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
+    {/* Paste your video logic here */}
+<HeroVideo  src="/27C6DF7E-795A-4C5C-9864-52DC4019C1BD.mp4"/>
+
+  </div>  
+  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
+      {/* Paste your video logic here */}
+  <HeroVideo  src="/A9E2A6AE-A40C-4BE4-B557-AB5588D3CC19.mp4"/>
+
+    </div>
+      </div>
+    </div>
+  </section>
+
+  {/* About / Lorem Ipsum Section */}
+  <section className="py-24 bg-white">
+    <div className="max-w-4xl mx-auto px-6">
+      <h2 className="text-5xl font-bold tracking-tight text-center mb-12">About Us</h2>
+      <div className="prose prose-lg text-gray-600 max-w-none">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* Final CTA */}
+  <section className="bg-gray-900 py-20 text-white text-center">
+    <div className="max-w-2xl mx-auto px-6">
+      <h2 className="text-5xl font-bold mb-6">Ready to Start Your Project?</h2>
+      <p className="text-xl text-gray-400 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="tel:+1234567890" className="inline-block bg-white text-gray-900 px-12 py-5 rounded-2xl font-semibold text-xl hover:bg-gray-100 transition">
+        Get In Touch Today
+      </a>
+    </div>
+  </section>
+</div>
   );
 }
