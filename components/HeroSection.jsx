@@ -33,7 +33,7 @@ export default function Hero() {
   className="group border border-white/70 hover:border-white text-white px-10 py-4 rounded-2xl font-medium text-lg transition-all duration-200 hover:bg-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-3"
 >
   <span className="md:hidden">📞</span>
-  <span>Watch demo</span>
+  <span>Call Us</span>
 </a>
     </div>
   </div>
