@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import HeroVideo from "@/components/HeroVideo"
 
 export const metadata: Metadata = {
   title: 'Routine Maintenance Services | Oil Change, Brakes & Undercoating in Addison',
@@ -16,210 +17,120 @@ export const metadata: Metadata = {
 
 export default function MaintenancePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-blue-900 text-white py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Routine Maintenance Services in Addison
-          </h1>
-          <p className="text-xl max-w-3xl mx-auto">
-            Expert care for brakes, oil changes, routine maintenance, and undercoating. 
-            Keep your vehicle safe, reliable, and protected year-round.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="tel:YOUR_PHONE_NUMBER" 
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition"
-            >
-              Call Now: (XXX) XXX-XXXX
-            </a>
-            <Link 
-              href="#schedule" 
-              className="border border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition"
-            >
-              Schedule Service
-            </Link>
-          </div>
-        </div>
+   <div className="font-sans">
+  {/* Hero Section - Big Background with Video/Image */}
+  <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <div className="absolute inset-0 bg-black/50 z-10"></div>
+    
+    {/* Replace with your video or image */}
+    <video 
+      autoPlay 
+      muted 
+      loop 
+      playsInline 
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="/your-hero-video.mp4" type="video/mp4" />
+    </video>
+
+    <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+      <h1 className="text-6xl md:text-7xl font-bold tracking-tighter text-white leading-tight mb-6 font-serif">
+        We Create Digital<br />Experiences That Matter
+      </h1>
+      <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+1234567890" className="bg-white text-gray-900 px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition">
+          Call Us Now
+        </a>
+        <button className="border border-white/80 text-white px-10 py-4 rounded-2xl font-medium text-lg hover:bg-white/10 transition">
+          Watch Video
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {/* Features / Services Section */}
+  <section className="py-24 bg-white">
+    <div className="max-w-6xl mx-auto px-6">
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-4">Our Services</h2>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+        </p>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <h2 className="text-3xl font-bold mb-6">Expert Automotive Care You Can Trust</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              At 2 Brothers Auto Service, we provide honest, efficient maintenance services for all makes and models. 
-              Our experienced technicians use quality parts and fluids to keep your vehicle performing at its best.
-            </p>
-            <p className="text-lg text-gray-700">
-              Located at <strong>915 S Westwood Ave, Addison, IL</strong>, we proudly serve local drivers who want reliable service without the hassle.
-            </p>
-          </div>
-          {/* Replace with your picture - e.g., hero or shop interior */}
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image 
-              src="/images/maintenance-hero.jpg" 
-              alt="Professional vehicle maintenance at 2 Brothers Auto Service in Addison IL"
-              fill 
-              className="object-cover"
-              priority
-            />
-          </div>
+      <div className="grid md:grid-cols-3 gap-10">
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto bg-blue-100 rounded-3xl flex items-center justify-center text-4xl mb-6">🚀</div>
+          <h3 className="text-2xl font-semibold mb-3">Web Development</h3>
+          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
         </div>
-
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          
-          {/* Brake Services */}
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-blue-900">Brake Services</h3>
-            <p className="text-gray-600 mb-6">
-              Your brakes are critical for safety. We deliver thorough inspections and quality service to ensure strong stopping power and smooth operation.
-            </p>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-3">• Brake pads, rotors, and calipers</li>
-              <li className="flex items-start gap-3">• Brake fluid check and flush</li>
-              <li className="flex items-start gap-3">• Warning signs like squealing or vibration</li>
-            </ul>
-            <p className="mt-6 text-sm text-gray-500">We provide clear, upfront estimates so you know exactly what your vehicle needs.</p>
-          </div>
-
-          {/* Oil Changes */}
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-blue-900">Oil Changes & Fluid Services</h3>
-            <p className="text-gray-600 mb-6">
-              Regular oil changes protect your engine, improve fuel efficiency, and extend vehicle life.
-            </p>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-3">• Conventional, synthetic, or blend oil</li>
-              <li className="flex items-start gap-3">• New oil filter installation</li>
-              <li className="flex items-start gap-3">• Multi-point inspection and fluid top-offs</li>
-            </ul>
-            <p className="mt-6 text-sm text-gray-500">We’ll recommend the right interval based on your vehicle and driving habits.</p>
-          </div>
-
-          {/* Routine Maintenance */}
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-blue-900">Routine Vehicle Maintenance</h3>
-            <p className="text-gray-600 mb-6">
-              Preventive care catches small issues before they become expensive problems.
-            </p>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-3">• Full vehicle health inspection</li>
-              <li className="flex items-start gap-3">• Brakes, suspension, steering, and tires</li>
-              <li className="flex items-start gap-3">• Battery, belts, hoses, and filters</li>
-            </ul>
-          </div>
-
-          {/* Undercoating */}
-          <div className="bg-white rounded-2xl shadow p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-blue-900">Undercoating & Rust Protection</h3>
-            <p className="text-gray-600 mb-6">
-              Protect your vehicle from Illinois winters, road salt, and corrosion with professional undercoating.
-            </p>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-3">• Shields frame, brake lines, and fuel tank</li>
-              <li className="flex items-start gap-3">• Reduces road noise</li>
-              <li className="flex items-start gap-3">• Helps maintain resale value</li>
-            </ul>
-            <p className="mt-6 text-sm text-gray-500">Especially recommended for vehicles driven in the Midwest.</p>
-          </div>
+        
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto bg-emerald-100 rounded-3xl flex items-center justify-center text-4xl mb-6">📹</div>
+          <h3 className="text-2xl font-semibold mb-3">Video Production</h3>
+          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
         </div>
-
-        {/* Why Choose Us */}
-        <div className="bg-white rounded-3xl shadow p-10 mb-16">
-          <h2 className="text-3xl font-bold text-center mb-10">Why Drivers in Addison Choose 2 Brothers</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl mb-3">🔧</div>
-              <h4 className="font-semibold mb-2">Experienced Technicians</h4>
-              <p className="text-sm text-gray-600">Years of hands-on expertise with all makes and models</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">💰</div>
-              <h4 className="font-semibold mb-2">Transparent Pricing</h4>
-              <p className="text-sm text-gray-600">No surprises — clear upfront estimates</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">⚡</div>
-              <h4 className="font-semibold mb-2">Fast Service</h4>
-              <p className="text-sm text-gray-600">We respect your time and get you back on the road quickly</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">🏡</div>
-              <h4 className="font-semibold mb-2">Locally Owned</h4>
-              <p className="text-sm text-gray-600">Proudly serving Addison and nearby communities</p>
-            </div>
-          </div>
-        </div>
-
-        {/* FAQ Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
-          
-          <div className="max-w-3xl mx-auto space-y-4">
-            {[
-              {
-                q: "How often should I get an oil change?",
-                a: "It depends on your vehicle and oil type. Many modern vehicles with synthetic oil can go 5,000–10,000 miles. We’ll check your owner’s manual and recommend the best schedule for your driving habits."
-              },
-              {
-                q: "What are common signs my brakes need service?",
-                a: "Look for squealing or grinding noises, a soft or vibrating brake pedal, longer stopping distances, or a dashboard warning light. Bring your vehicle in for a quick inspection if you notice any of these."
-              },
-              {
-                q: "Is undercoating worth it in Illinois?",
-                a: "Yes — especially with harsh winters and road salt. It helps protect against rust and corrosion, potentially saving you money long-term and preserving your vehicle’s value."
-              },
-              {
-                q: "How long does an oil change take?",
-                a: "Most standard oil changes are completed in 30–45 minutes. We’ll let you know right away if anything else needs attention during the service."
-              },
-              {
-                q: "Do you service all makes and models?",
-                a: "Yes! Our technicians are experienced working on domestic, import, and European vehicles."
-              }
-            ].map((faq, index) => (
-              <details 
-                key={index}
-                className="group bg-white rounded-2xl shadow p-6 cursor-pointer"
-              >
-                <summary className="flex justify-between items-center text-lg font-medium list-none">
-                  {faq.q}
-                  <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="mt-4 text-gray-600 leading-relaxed">{faq.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div id="schedule" className="bg-blue-900 text-white rounded-3xl p-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Schedule Your Maintenance?</h2>
-          <p className="text-xl mb-8 max-w-lg mx-auto">
-            Stop by or give us a call today. Same-day appointments often available for oil changes and basic services.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="tel:YOUR_PHONE_NUMBER" 
-              className="bg-white text-blue-900 px-10 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 inline-block"
-            >
-              Call (XXX) XXX-XXXX
-            </a>
-            <Link 
-              href="/contact" 
-              className="border-2 border-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 inline-block"
-            >
-              Contact Us Online
-            </Link>
-          </div>
-          <p className="mt-6 text-sm opacity-80">
-            915 S Westwood Ave, Addison, IL • Open Monday–Saturday
-          </p>
+        
+        <div className="text-center">
+          <div className="w-20 h-20 mx-auto bg-purple-100 rounded-3xl flex items-center justify-center text-4xl mb-6">📈</div>
+          <h3 className="text-2xl font-semibold mb-3">Digital Marketing</h3>
+          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
         </div>
       </div>
     </div>
+  </section>
+
+  {/* Video Section */}
+  <section className="py-24 bg-gray-50">
+    <div className="max-w-5xl mx-auto px-6">
+      <div className="text-center mb-12">
+        <h2 className="text-5xl font-bold tracking-tight text-gray-900">See Our Work</h2>
+      </div>
+      {/* Add your videos here */}
+      <div className="grid md:grid-cols-2 gap-8">
+  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
+    {/* Paste your video logic here */}
+<HeroVideo />
+  </div>  
+  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
+      {/* Paste your video logic here */}
+  <HeroVideo />
+    </div>
+      </div>
+    </div>
+  </section>
+
+  {/* About / Lorem Ipsum Section */}
+  <section className="py-24 bg-white">
+    <div className="max-w-4xl mx-auto px-6">
+      <h2 className="text-5xl font-bold tracking-tight text-center mb-12">About Us</h2>
+      <div className="prose prose-lg text-gray-600 max-w-none">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* Final CTA */}
+  <section className="bg-gray-900 py-20 text-white text-center">
+    <div className="max-w-2xl mx-auto px-6">
+      <h2 className="text-5xl font-bold mb-6">Ready to Start Your Project?</h2>
+      <p className="text-xl text-gray-400 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="tel:+1234567890" className="inline-block bg-white text-gray-900 px-12 py-5 rounded-2xl font-semibold text-xl hover:bg-gray-100 transition">
+        Get In Touch Today
+      </a>
+    </div>
+  </section>
+</div>
   );
 }
