@@ -7,23 +7,23 @@ export default function Hero() {
   return (
     <div className="relative">
       
-      {/* ====================== HERO SECTION - 90vw on Desktop ====================== */}
-      <div className="relative mx-auto w-full max-w-[90vw] min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden rounded-3xl shadow-2xl">
+      {/* ====================== FULL WIDTH HERO ====================== */}
+      <div className="relative w-screen min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
 
-        {/* Background Image */}
+        {/* Full Width Background Image */}
         <Image 
           src="/pic1.jpg" 
           alt="Professional Auto Repair Shop"
           fill
-          className="object-cover rounded-3xl"
+          className="object-cover"
           priority
         />
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60 md:bg-black/50 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-black/65 md:bg-black/55"></div>
 
-        {/* Content */}
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-16 pb-12">
+        {/* Content - Centered and Readable */}
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20 pb-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6">
             Get professional<br />
             auto care with{" "}
@@ -38,7 +38,7 @@ export default function Hero() {
 
           {/* Call Button */}
           <a 
-            href="tel:+16302297330"
+            href="tel:+1234567890"
             className="group border border-white/80 hover:border-white text-white px-10 py-4 rounded-2xl font-medium text-lg transition-all duration-200 hover:bg-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-3 mx-auto"
           >
             <span className="md:hidden">📞</span>
@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ====================== TWO FEATURES SECTION ====================== */}
+      {/* ====================== FEATURES SECTION ====================== */}
       <div className="max-w-6xl mx-auto px-6 -mt-12 md:-mt-16 relative z-20 pb-20">
         <div className="grid md:grid-cols-2 gap-6">
           
