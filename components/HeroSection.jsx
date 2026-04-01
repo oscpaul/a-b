@@ -7,19 +7,18 @@ export default function Hero() {
   return (
 <div className="relative">
 
-
-{/* Big Hero Section - 90vw on Desktop */}
-<div className="relative mx-auto w-full max-w-[90vw] min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden rounded-3xl">
+{/* Big Hero Section - Full Width on Desktop */}
+<div className="relative w-full min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
 
   {/* Background Image */}
   <img 
     src="/pic1.jpg" 
     alt="Auto Repair Shop"
-    className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+    className="absolute inset-0 w-full h-full object-cover"
   />
   
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/60 md:bg-black/50 rounded-3xl"></div>
+  <div className="absolute inset-0 bg-black/60 md:bg-black/50"></div>
 
   {/* Content Overlay */}
   <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-16 pb-12">
@@ -37,7 +36,7 @@ export default function Hero() {
 
     {/* Call Button */}
     <a 
-      href="tel:+6302297330"
+      href="tel:+1234567890"
       className="group border border-white/80 hover:border-white text-white px-9 py-4 rounded-2xl font-medium text-lg transition-all duration-200 hover:bg-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-3 mx-auto"
     >
       <span className="md:hidden">📞</span>
