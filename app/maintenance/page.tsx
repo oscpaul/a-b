@@ -99,7 +99,7 @@ export default function MaintenancePage() {
   </div>  
   <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
       {/* Paste your video logic here */}
-  <HeroVideo  src="/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.mp4"/>
+  <HeroVideo  src="/A9E2A6AE-A40C-4BE4-B557-AB5588D3CC19.mp4"/>
 
     </div>
       </div>
