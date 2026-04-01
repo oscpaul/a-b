@@ -6,37 +6,64 @@ import Image from 'next/image';
 export default function Hero() {
   return (
 <div className="relative">
-  {/* Big Image / Visual at the Top */}
-  <div className="relative w-[90vw] min-h-[90vh] flex items-center justify-center overflow-hidden">
-    <img 
-      src="/pic1.jpg" 
-      alt="Hero Background" 
-      className="absolute inset-0 w-full h-auto"
-    />
+
+
+<div className="relative min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
+  
+  {/* Background Image */}
+  <img 
+    src="/pic1.jpg" 
+    alt="Auto Repair Shop"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  
+  {/* Dark Overlay - Stronger on mobile */}
+  <div className="absolute inset-0 bg-black/60 md:bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-16 pb-12">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6">
+      Get professional<br />
+      auto care with{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+        confidence.
+      </span>
+    </h1>
     
-    {/* Dark Overlay */}
-    <div className="absolute inset-0 bg-black/10"></div>
+    <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto mb-10">
+      Expert auto repair and maintenance serving DuPage County, Lombard, Addison, and surrounding areas.
+    </p>
 
-    {/* Content Overlay */}
-    <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6">
-        Get professional<br />
-        auto care with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">confidence.</span>
-      </h1>
-      
-      <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto mb-10">
-        The modern toolkit that helps teams ship faster, collaborate better, and delight users.
-      </p>
-
+    {/* Call Button */}
     <a 
-  href="tel:+16302297330"
-  className="group border border-white/70 hover:border-white text-white px-10 py-4 rounded-2xl font-medium text-lg transition-all duration-200 hover:bg-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-3"
->
-  <span className="md:hidden">📞</span>
-  <span>Call Us</span>
-</a>
-    </div>
+      href="tel:+1234567890"
+      className="group border border-white/80 hover:border-white text-white px-9 py-4 rounded-2xl font-medium text-lg transition-all duration-200 hover:bg-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-3 mx-auto"
+    >
+      <span className="md:hidden">📞</span>
+      <span>Call For Service</span>
+    </a>
   </div>
+</div>
+
+Key Fixes Applied:Removed w-[90vw] → now full width
+Better height handling (min-h-[100vh] on mobile, slightly less on desktop)
+Image uses object-cover so it properly fills the screen without distortion
+Stronger overlay on mobile for better text readability
+Smaller, more readable text sizes on mobile (text-4xl instead of text-5xl)
+Better padding and spacing for mobile screens
+Updated button text to be more relevant for an auto shop
+
+Would you like me to make the text even smaller on mobile, or add a scroll indicator at the bottom?
+
+Explore Tailwind responsive utilities
+
+Optimize hero section animations
+
+Revise mobile text sizing
+
+
+
+  
 
   {/* Two Features Section */}
   <div className="max-w-6xl mx-auto px-6 -mt-2 relative z-20">
