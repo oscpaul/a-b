@@ -8,19 +8,20 @@ export default function Hero() {
 <div className="relative">
 
 
-<div className="relative min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
-  
+{/* Big Hero Section - 90vw on Desktop */}
+<div className="relative mx-auto w-full max-w-[90vw] min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden rounded-3xl">
+
   {/* Background Image */}
   <img 
     src="/pic1.jpg" 
     alt="Auto Repair Shop"
-    className="absolute inset-0 w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full object-cover rounded-3xl"
   />
   
-  {/* Dark Overlay - Stronger on mobile */}
-  <div className="absolute inset-0 bg-black/60 md:bg-black/50"></div>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60 md:bg-black/50 rounded-3xl"></div>
 
-  {/* Content */}
+  {/* Content Overlay */}
   <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-16 pb-12">
     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6">
       Get professional<br />
@@ -44,7 +45,6 @@ export default function Hero() {
     </a>
   </div>
 </div>
-
 
 
 
