@@ -69,7 +69,7 @@ const pathname = usePathname();
   {/* Video */}
   <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
     {/* Paste your video logic here */}
-<HeroVideo />
+<HeroVideo  src="/Adobe Express - segment (5).mp4"/>
   </div>
 </div>
 
