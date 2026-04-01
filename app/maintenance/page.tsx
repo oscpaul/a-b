@@ -105,19 +105,27 @@ export default function MaintenancePage() {
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold tracking-tight text-gray-900">See Our Work</h2>
       </div>
+
+
+      
       {/* Add your videos here */}
-      <div className="grid md:grid-cols-2 gap-8">
-  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
-    {/* Paste your video logic here */}
-<HeroVideo  src="/27C6DF7E-795A-4C5C-9864-52DC4019C1BD.mp4"/>
+    <div className="grid md:grid-cols-2 gap-6 md:gap-8 px-4 md:px-0 max-w-5xl mx-auto">
+  
+  {/* Video 1 */}
+  <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-lg">
+    <HeroVideo src="/27C6DF7E-795A-4C5C-9864-52DC4019C1BD.mp4" />
+  </div>
 
-  </div>  
-  <div className="w-full md:w-[420px] aspect-[1] mt-6 md:mt-0 md:ml-4 relative">
-      {/* Paste your video logic here */}
-  <HeroVideo  src="/A9E2A6AE-A40C-4BE4-B557-AB5588D3CC19.mp4"/>
+  {/* Video 2 */}
+  <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-lg">
+    <HeroVideo src="/A9E2A6AE-A40C-4BE4-B557-AB5588D3CC19.mp4" />
+  </div>
 
-    </div>
-      </div>
+</div>
+   
+    
+    
+    
     </div>
   </section>
 
