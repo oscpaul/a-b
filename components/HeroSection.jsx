@@ -45,21 +45,7 @@ export default function Hero() {
   </div>
 </div>
 
-Key Fixes Applied:Removed w-[90vw] → now full width
-Better height handling (min-h-[100vh] on mobile, slightly less on desktop)
-Image uses object-cover so it properly fills the screen without distortion
-Stronger overlay on mobile for better text readability
-Smaller, more readable text sizes on mobile (text-4xl instead of text-5xl)
-Better padding and spacing for mobile screens
-Updated button text to be more relevant for an auto shop
 
-Would you like me to make the text even smaller on mobile, or add a scroll indicator at the bottom?
-
-Explore Tailwind responsive utilities
-
-Optimize hero section animations
-
-Revise mobile text sizing
 
 
 
