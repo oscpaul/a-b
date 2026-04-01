@@ -3,13 +3,15 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
-export default function BackgroundVideo({
-  videos,
-  currentVideoIndex,
-}: {
-  videos: string[];
-  currentVideoIndex: number;
-}) {
+
+
+interface VideoPlayerProps {
+  src: string;        // video source URL
+ 
+}
+
+export default function HeroVideo({ src }: VideoPlayerProps) {
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const pathname = usePathname();
 
@@ -20,7 +22,7 @@ export default function BackgroundVideo({
     const restartVideo = async () => {
       try {
         // Force reload the current source
-        video.src = videos[currentVideoIndex];
+        video.src = src;
         video.load(); // Important for mobile after navigation
 
         // Small delay helps on iOS/Safari after back navigation
@@ -41,13 +43,13 @@ export default function BackgroundVideo({
       video.pause();
       // Optional: video.src = ''; // can help free memory on some devices
     };
-  }, [videos, currentVideoIndex, pathname]);
+  }, );
 
   return (
 <video
       
        ref={videoRef}
-        src="/Adobe Express - segment (5).mp4"
+        src={src}
         autoPlay // Muted is often required for autoplay to work
         muted
          key={pathname}
