@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="relative">
       
       {/* ====================== FULL WIDTH HERO ====================== */}
-      <div className="relative w-screen min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <div className="relative w-[90vw] min-h-[100vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
 
         {/* Full Width Background Image */}
         <Image 
