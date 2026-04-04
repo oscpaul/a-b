@@ -5,8 +5,8 @@ import Link from 'next/link';
 import HeroVideo from "@/components/HeroVideo"
 
 export const metadata: Metadata = {
-  title: 'Routine Maintenance Services | Oil Change, Brakes & Undercoating in Addison',
-  description: 'Expert brake service, oil changes, routine maintenance, and undercoating at 2 Brothers Auto Service in Addison, IL. Honest pricing, fast service, and trusted technicians.',
+  title: 'Oil Change Addison IL | Quick Auto Repair Near Me',
+  description: 'Oil Change Addison IL – Fast quick oil change, full synthetic oil change & cheap oil change near me. Same day auto repair, tire rotation & preventive maintenance.',
   keywords: ['oil change Addison', 'brake service Addison', 'car maintenance Addison', 'undercoating Illinois', 'routine maintenance'],
   openGraph: {
     title: 'Routine Maintenance Services - 2 Brothers Auto Service',
