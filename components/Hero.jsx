@@ -54,7 +54,7 @@ const pathname = usePathname();
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl justify-center md:text-6xl font-bold  text-center text-gray-900 leading-tight mb-10"
+            className="text-5xl justify-center md:text-6xl font-bold  text-center text-gray-900 leading-none mb-10"
           >
             Loved by Real Customers
           </motion.h1>
