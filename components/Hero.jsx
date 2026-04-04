@@ -47,7 +47,7 @@ const ReviewSidebar = () => {
 const pathname = usePathname();
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-[80vh]  w-full bg-white align-center">
+    <div className="flex flex-col lg:flex-row min-h-[65vh]  w-full bg-white align-center">
       {/* Left / Top Side - Headline + Carousel */}
       <div className="flex-1 flex flex-col items-center">
         <div className="w-full text-center lg:text-center">
