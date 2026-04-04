@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Routine Maintenance Services - 2 Brothers Auto Service',
     description: 'Keep your vehicle safe and reliable with professional brake, oil change, and undercoating services in Addison.',
-    images: [{ url: '/images/maintenance-hero.jpg' }], // replace with your actual image
+    images: [{ url: '/oil-2.png' }], // replace with your actual image
   },
 };
 
