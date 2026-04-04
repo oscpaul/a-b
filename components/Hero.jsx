@@ -49,7 +49,7 @@ const pathname = usePathname();
   return (
     <div className="flex flex-col lg:flex-row min-h-screen  w-full bg-white align-center">
       {/* Left / Top Side - Headline + Carousel */}
-      <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="flex-1 flex flex-col items-center">
         <div className="w-full text-center lg:text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ const pathname = usePathname();
       </div>
 
       {/* Right / Bottom Side - Iframe + Logos Below */}
-      <div className="w-full lg:w-[400px]  justify-center flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
+      <div className="w-full lg:w-[400px] flex-shrink-0 border-t lg:border-t-0 lg:border-l border-gray-200 bg-white flex flex-col">
         {/* Iframe Container - Responsive Height */}
         <div 
           className="w-full flex-shrink-0"
