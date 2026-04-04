@@ -197,6 +197,24 @@ font-weight: bold;
 }
 
 
+/* Scroll Down Animation */
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 1.8s infinite ease-in-out;
+}
 
 
 
