@@ -144,14 +144,66 @@ Contact us today for your next quick oil change, full maintenance package, or an
     <div className="max-w-4xl mx-auto px-6">
       <h2 className="text-5xl font-bold tracking-tight text-center mb-12">About Us</h2>
       <div className="prose prose-lg text-gray-600 max-w-none">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+   <h1>Oil Change Addison – Fast & Reliable Auto Repair Near You</h1>
+
+<h2>Oil Change Addison Near Me – Quick & Professional Service</h2>
+<p>Looking for a trusted <strong>oil change Addison</strong> or <strong>oil change Addison near me</strong>? Our car service center makes vehicle maintenance simple and affordable. Whether you need a <strong>quick oil change</strong>, <strong>express oil change</strong>, <strong>10 minute oil change</strong>, or a premium <strong>full synthetic oil change</strong>, our experienced auto mechanic team delivers fast, high-quality service.</p>
+
+<p>We offer <strong>conventional oil change</strong>, <strong>synthetic oil change</strong>, <strong>5 quart oil change</strong>, <strong>car oil change</strong>, and <strong>truck oil change</strong>. We use quality <strong>engine oil</strong> and <strong>motor oil</strong> to <strong>ensure your vehicle</strong> stays protected and performs at its best.</p>
+
+<h2>Choosing the Right Type of Oil for Your Vehicle</h2>
+<p>Not sure what <strong>type of oil</strong> is best for your car? We help you choose between <strong>synthetic oil</strong> and <strong>conventional oil</strong> based on your driving habits and vehicle needs. For many modern cars, <strong>synthetic oil</strong> provides superior protection, better fuel economy, and longer intervals between changes. However, some vehicles perform perfectly with high-quality <strong>conventional oil</strong>.</p>
+
+<p>We always refer to your <strong>owner manual</strong> and follow the <strong>vehicle manufacturer</strong> recommendations to select the correct <strong>motor oil</strong> and <strong>oil filter</strong> for optimal engine performance and longevity.</p>
+
+<h2>High Mileage Oil Changes in Addison</h2>
+<p>Driving a high-mileage vehicle? We specialize in <strong>high mileage</strong> oil changes designed for engines with over 75,000 miles. These advanced formulations help reduce oil consumption, minimize leaks, and provide extra protection against wear in older engines.</p>
+
+<h2>Signs You Need an Oil Change</h2>
+<p>Wondering about the <strong>signs you need an oil change</strong>? Common indicators include dark or gritty <strong>engine oil</strong>, unusual engine noise, reduced fuel efficiency, or the check engine light. Don’t wait until problems arise—schedule your <strong>oil change service</strong> today.</p>
+
+<h2>Complete Preventive Maintenance Services Included</h2>
+<p>Regular <strong>preventive maintenance</strong> is the smartest way to avoid expensive repairs. During every <strong>oil change service</strong>, we perform a thorough <strong>multi point inspection</strong> and include the following <strong>services included</strong>:</p>
+
+<ul>
+    <li><strong>Tire rotation</strong></li>
+    <li><strong>Oil filter</strong> replacement</li>
+    <li><strong>Air filter replacement</strong></li>
+    <li><strong>Cabin air filter</strong> replacement</li>
+    <li><strong>Brake inspection</strong></li>
+    <li><strong>Fluid top off</strong></li>
+    <li><strong>Windshield wiper replacement</strong></li>
+    <li><strong>Battery test</strong></li>
+    <li><strong>Tire pressure</strong> check and adjustment</li>
+</ul>
+
+<p>Popular packages combine <strong>oil change and tire rotation</strong> as well as <strong>oil change and brake service</strong> to save you time and money.</p>
+
+<h2>Full Auto Repair Near Me in Addison</h2>
+<p>Beyond oil changes, we are your reliable <strong>auto repair near me</strong> and <strong>car repair shop</strong> in Addison. Our skilled <strong>mechanic near me</strong> team handles everything from routine <strong>car maintenance</strong> to complex <strong>vehicle repair</strong> and <strong>emergency car repair</strong>.</p>
+
+<p>We also provide <strong>roadside assistance</strong> coordination and honest, transparent service at our convenient <strong>car service center</strong>.</p>
+
+<h2>Additional Automotive Repair Services</h2>
+<p>Our expert technicians offer a wide range of repairs including:</p>
+
+<ul>
+    <li><strong>Tune up service</strong></li>
+    <li><strong>Transmission fluid change</strong></li>
+    <li><strong>Coolant flush</strong></li>
+    <li><strong>Power steering fluid</strong> replacement</li>
+    <li><strong>Brake fluid flush</strong></li>
+    <li><strong>Spark plug replacement</strong></li>
+    <li><strong>Serpentine belt replacement</strong></li>
+</ul>
+
+<h2>Why Local Drivers Trust Our Automotive Repair Shop</h2>
+<p>As your neighborhood <strong>automotive repair</strong> experts in Addison, we combine speed, quality parts, and fair pricing. We <strong>ensure your vehicle</strong> receives the proper care it deserves, whether you drive a daily commuter, family SUV, or heavy-duty truck.</p>
+
+<p>Search no further for <strong>Oil change Addison</strong>, <strong>Oil change Addison near me</strong>, or <strong>Auto repair Addison</strong> — we are the convenient and trustworthy choice for all your auto repair needs.</p>
+
+<h2>Ready to Schedule Your Service?</h2>
+<p>Contact us today for your next <strong>quick oil change</strong>, full maintenance package, or any <strong>auto repair near me</strong> needs. Walk-ins are welcome and <strong>same day auto repair</strong> is available on most services.</p>
       </div>
     </div>
   </section>
