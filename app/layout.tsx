@@ -149,6 +149,21 @@ export default function RootLayout({children}:{children:ReactNode}) {
    
       ],
                 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 
                 {
                   "@type": "LocalBusiness",
@@ -178,10 +193,73 @@ export default function RootLayout({children}:{children:ReactNode}) {
                   "provider": {
                     "@id": "https://www.devwordpressspace.site/#autorepair"
                   },
-                  "areaServed": {
-                    "@type": "Place",
-                    "name": "Addison, Illinois"
-                  },
+                  "areaServed": [
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#addison",
+          "name": "Addison, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Addison",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9317,
+            "longitude": -87.9890
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#villa-park",
+          "name": "Villa Park, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Villa Park",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.8898,
+            "longitude": -87.9889
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#wood-dale",
+          "name": "Wood Dale, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wood Dale",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9634,
+            "longitude": -87.9789
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#bensenville",
+          "name": "Bensenville, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bensenville",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9550,
+            "longitude": -87.9400
+          }
+        }
+        // ← Add more Place objects here in the same format
+      ]
                   "description": "Professional muffler repair and exhaust system services in Addison, IL."
                 },
                 {
@@ -190,10 +268,73 @@ export default function RootLayout({children}:{children:ReactNode}) {
                   "provider": {
                     "@id": "https://www.devwordpressspace.site/#autorepair"
                   },
-                  "areaServed": {
-                    "@type": "Place",
-                    "name": "Addison, Illinois"
-                  },
+                   "areaServed": [
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#addison",
+          "name": "Addison, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Addison",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9317,
+            "longitude": -87.9890
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#villa-park",
+          "name": "Villa Park, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Villa Park",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.8898,
+            "longitude": -87.9889
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#wood-dale",
+          "name": "Wood Dale, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wood Dale",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9634,
+            "longitude": -87.9789
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#bensenville",
+          "name": "Bensenville, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bensenville",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9550,
+            "longitude": -87.9400
+          }
+        }
+        // ← Add more Place objects here in the same format
+      ]
                   "description": "Brake inspection, repair, and suspension services to keep your vehicle safe and smooth."
                 },
                 {
@@ -202,12 +343,92 @@ export default function RootLayout({children}:{children:ReactNode}) {
                   "provider": {
                     "@id": "https://www.devwordpressspace.site/#autorepair"
                   },
-                  "areaServed": {
-                    "@type": "Place",
-                    "name": "Addison, Illinois"
-                  },
+                  "areaServed": [
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#addison",
+          "name": "Addison, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Addison",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9317,
+            "longitude": -87.9890
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#villa-park",
+          "name": "Villa Park, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Villa Park",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.8898,
+            "longitude": -87.9889
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#wood-dale",
+          "name": "Wood Dale, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wood Dale",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9634,
+            "longitude": -87.9789
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#bensenville",
+          "name": "Bensenville, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bensenville",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9550,
+            "longitude": -87.9400
+          }
+        }
+        // ← Add more Place objects here in the same format
+      ]
                   "description": "Routine vehicle maintenance including oil changes, inspections, and fluid services."
                 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
                 {
                   "@type": "FAQPage",
                   "mainEntity": [
