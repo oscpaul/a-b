@@ -73,7 +73,17 @@ export default function MaintenancePage() {
       <div className="text-center mb-16">
         <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-4">Our Services</h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+Oil Change Addison – Fast, Reliable Service Near YouLooking for a trusted oil change Addison or oil change Addison near me? At our car service center, we make vehicle maintenance simple and affordable. Whether you need a quick oil change, express oil change, 10 minute oil change, or a full synthetic oil change, our experienced auto mechanic team delivers fast, professional service. We proudly offer conventional oil change, full synthetic oil change, 5 quart oil change, and car oil change or truck oil change options to keep your engine running smoothly.Why Choose Our Oil Change Service?We understand you’re busy, which is why we provide mobile oil change service near me options and same day auto repair for most services. Ask about our current oil change coupon and oil change special to enjoy a cheap oil change without sacrificing quality. Not sure how much does an oil change cost or when should I get an oil change? Our technicians will explain everything clearly, including the best oil for my car and the difference between synthetic vs conventional oil.Complete Preventive Maintenance for Your VehicleRegular preventive maintenance is the best way to avoid costly breakdowns. Our multi point inspection checks all vital systems while you wait. We also perform tire rotation, oil filter replacement, air filter replacement, cabin air filter replacement, brake inspection, fluid top off, windshield wiper replacement, and battery test during every visit.Popular packages include oil change and tire rotation as well as oil change and brake service. These combinations help you save time and money while keeping your car in top condition.Full Auto Repair Near Me in AddisonBeyond oil changes, we are your reliable auto repair near me and car repair shop in Addison. Our skilled mechanic near me team handles everything from routine car maintenance to complex vehicle repair. Need emergency car repair or roadside assistance? We’re here to help with fast response times and honest service.Additional services we offer include:Tune up service
+Transmission fluid change
+Coolant flush
+Power steering fluid replacement
+Brake fluid flush
+Spark plug replacement
+Serpentine belt replacement
+
+Signs You Need an Oil Change and Other MaintenanceWondering about the signs you need an oil change? Common indicators include dark or gritty oil, engine noise, reduced fuel efficiency, or the check engine light. Don’t wait until it’s too late—schedule your oil change service today and protect your engine.Why Local Drivers Trust Our Automotive Repair ShopAs your neighborhood automotive repair experts in Addison, we combine speed, quality parts, and transparent pricing. Whether you drive a daily commuter, family SUV, or heavy-duty truck, we treat every vehicle with care. Search no further for Oil change Addison, Oil change Addison near me, or Auto repair Addison—we are the convenient, trustworthy choice.Ready to schedule?
+Contact us today for your next quick oil change, full maintenance package, or any auto repair near me needs. Walk-ins welcome and same-day service available on most repairs.
+
         </p>
       </div>
 
