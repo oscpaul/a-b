@@ -187,6 +187,10 @@ export default function RootLayout({children}:{children:ReactNode}) {
                     "@id": "https://www.devwordpressspace.site/#organization"
                   }
                 },
+
+
+
+                
                 {
                   "@type": "Service",
                   "name": "Muffler Repair",
@@ -259,7 +263,7 @@ export default function RootLayout({children}:{children:ReactNode}) {
           }
         }
         // ← Add more Place objects here in the same format
-      ]
+      ],
                   "description": "Professional muffler repair and exhaust system services in Addison, IL."
                 },
                 {
@@ -334,7 +338,7 @@ export default function RootLayout({children}:{children:ReactNode}) {
           }
         }
         // ← Add more Place objects here in the same format
-      ]
+      ],
                   "description": "Brake inspection, repair, and suspension services to keep your vehicle safe and smooth."
                 },
                 {
@@ -409,7 +413,7 @@ export default function RootLayout({children}:{children:ReactNode}) {
           }
         }
         // ← Add more Place objects here in the same format
-      ]
+      ],
                   "description": "Routine vehicle maintenance including oil changes, inspections, and fluid services."
                 },
 
