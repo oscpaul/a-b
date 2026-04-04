@@ -63,8 +63,93 @@ export default function RootLayout({children}:{children:ReactNode}) {
                     ],
                     "opens": "08:00",
                     "closes": "18:00"
+                  },
+                        "areaServed": [
+    
+                {
+                  "@type": "Place",
+                  "@id": "https://www.devwordpressspace.site/#addison",
+                  "name": "Addison, IL",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Addison",
+                    "addressRegion": "IL",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                   "latitude": 41.9317,
+    "longitude": -87.9890
                   }
                 },
+     {
+                  "@type": "Place",
+                  "@id": "https://www.devwordpressspace.site/#addison",
+                  "name": "Lombard, IL",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Addison",
+                    "addressRegion": "IL",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                   "latitude":41.8800,
+    "longitude": -88.0078
+                  }
+                },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#chicago",
+          "name": "Chicago, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chicago",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.8781,
+            "longitude": -87.6298
+          }
+        },
+         {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#villa-park",
+          "name": "Villa Park, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Villa Park",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.8898,
+            "longitude": -87.9889
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://www.devwordpressspace.site/#wood-dale",
+          "name": "Wood Dale, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Wood Dale",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.9634,
+            "longitude": -87.9789
+          }
+        }
+   
+      ],
+                },
+                
                 {
                   "@type": "LocalBusiness",
                   "priceRange": "$$",
