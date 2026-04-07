@@ -212,7 +212,7 @@ Serpentine belt replacement
 
 
 
-<h2 className="text-5xl font-bold tracking-tight text-gray-900">Why Local Drivers Trust Our Automotive Repair Shop/h2>
+<h2 className="text-5xl font-bold tracking-tight text-gray-900">Why Local Drivers Trust Our Automotive Repair Shop </h2>
 
 
 <h3>Oil Change Addison Near Me – Quick & Professional Service</h3>
