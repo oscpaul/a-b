@@ -30,7 +30,7 @@ export default function MaintenancePage() {
       playsInline 
       className="absolute inset-0 w-full h-full object-cover"
     >
-      <source src="/your-hero-video.mp4" type="video/mp4" />
+      <source src="/A3DA80A7-056C-427E-8F14-472A631C1794.mp4" type="video/mp4" />
     </video>
 
     <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
