@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-  
+   "@graph": [
         {
           "@type": "Service",
           "name": "Oil Change Service",
