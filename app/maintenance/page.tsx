@@ -38,7 +38,7 @@ export default function MaintenancePage() {
   {/* Content */}
   <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-12 pb-16 md:pt-0">
     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6 font-serif">
-      We Create Digital<br />Experiences That Matter
+      Oil Change and <br />Maintenance
     </h1>
   
     
@@ -72,7 +72,7 @@ export default function MaintenancePage() {
   <section className="py-24 bg-white">
     <div className="max-w-6xl mx-auto px-6">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold tracking-tight text-gray-900 mb-4">Oil Change and Maintenance</h1>
+       
                 <h2 className="text-5xl font-bold tracking-tight text-gray-900">Quick, Cheap Oil Change</h2>
 
 <h3>Signs You Need an Oil Change</h3>
