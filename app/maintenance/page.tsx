@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroVideo from "@/components/HeroVideo"
-
+import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Oil Change Addison IL | Quick Auto Repair Near Me',
   description: 'Oil Change Addison IL – Fast quick oil change, full synthetic oil change & cheap oil change near me. Same day auto repair, tire rotation & preventive maintenance.',
@@ -13,6 +13,77 @@ export const metadata: Metadata = {
     images: [{ url: '/oil-2.png' }], // replace with your actual image
   },
 };
+
+
+
+
+// Inside your MaintenancePage component, before or after the main <div>
+<Script
+  id="maintenance-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+  
+        {
+          "@type": "Service",
+          "name": "Oil Change Service",
+          "serviceType": "Automotive Maintenance",
+          "provider": { "@id": "https://www.yourdomain.com/#business" },
+          "description": "Quick oil change, full synthetic oil change, conventional oil change, 5-quart oil change, high mileage oil change for cars and trucks in Addison IL. Includes oil filter replacement and multi-point inspection.",
+ "areaServed": {
+    "@type": "Place",
+    "name": "Addison, IL and surrounding areas"
+  },          "offers": {
+            "@type": "Offer",
+            "price": "49.99",           // Update with your actual starting price
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yourdomain.com/services/maintenance"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Routine Preventive Maintenance",
+          "serviceType": "Preventive Maintenance",
+          "provider": { "@id": "https://www.yourdomain.com/#business" },
+          "description": "Comprehensive routine maintenance including tire rotation, brake inspection, fluid top-off, air filter replacement, cabin filter replacement, battery test, and more. Perfect for keeping your vehicle reliable.",
+           "areaServed": {
+    "@type": "Place",
+    "name": "Addison, IL and surrounding areas"
+  },
+          "offers": {
+            "@type": "Offer",
+            "price": "99.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yourdomain.com/services/maintenance"
+          }
+        },
+     {
+  "@type": "Service",
+  "name": "Undercoating Service",
+  "serviceType": "Vehicle Undercoating",
+  "provider": {
+    "@id": "https://www.yourdomain.com/#business"
+  },
+  "description": "Professional undercoating and rustproofing application to protect your vehicle's underbody from rust, salt, and road debris. Ideal for cars and trucks in the Addison, IL area.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Addison, IL and surrounding areas"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "149.99",          // Replace with your actual price
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.yourdomain.com/services/maintenance"
+  }
+}
+      ]
+    })
+  }}
+/>
 
 export default function MaintenancePage() {
   return (
