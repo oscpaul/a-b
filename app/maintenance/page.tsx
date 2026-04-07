@@ -75,8 +75,6 @@ export default function MaintenancePage() {
         <h1 className="text-5xl font-bold tracking-tight text-gray-900 mb-4">Oil Change and Maintenance</h1>
                 <h2 className="text-5xl font-bold tracking-tight text-gray-900">Quick, Cheap Oil Change</h2>
 
-      
-
 <h3>Signs You Need an Oil Change</h3>
 <p>Wondering about the <strong>signs you need an oil change</strong>? Common indicators include dark or gritty <strong>engine oil</strong>, unusual engine noise, reduced fuel efficiency, or the check engine light. Don’t wait until problems arise—schedule your <strong>oil change service</strong> today.</p>
 Signs You Need an Oil Change and Other MaintenanceWondering about the signs you need an oil change? Common indicators include dark or gritty oil, engine noise, reduced fuel efficiency, or the check engine light. Don’t wait until it’s too late—schedule your oil change service today and protect your engine.Why Local Drivers Trust Our Automotive Repair ShopAs your neighborhood automotive repair experts in Addison, we combine speed, quality parts, and transparent pricing. Whether you drive a daily commuter, family SUV, or heavy-duty truck, we treat every vehicle with care. Search no further for Oil change Addison, Oil change Addison near me, or Auto repair Addison—we are the convenient, trustworthy choice.Ready to schedule?
@@ -84,8 +82,8 @@ Contact us today for your next quick oil change, full maintenance package, or an
       
         <h4>High Mileage Oil Changes in Addison</h4>
 <p>Driving a high-mileage vehicle? We specialize in <strong>high mileage</strong> oil changes designed for engines with over 75,000 miles. These advanced formulations help reduce oil consumption, minimize leaks, and provide extra protection against wear in older engines.</p>
-
       </div>
+
 
 <h3>Choosing the Right Type of Oil for Your Vehicle</h3>
 <p>We offer <strong>conventional oil change</strong>, <strong>synthetic oil change</strong>, <strong>5 quart oil change</strong>, <strong>car oil change</strong>, and <strong>truck oil change</strong>. We use quality <strong>engine oil</strong> and <strong>motor oil</strong> to <strong>ensure your vehicle</strong> stays protected and performs at its best.</p>
@@ -150,7 +148,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
     <div className="max-w-4xl mx-auto px-6">
       <h2 className="text-5xl font-bold tracking-tight text-center mb-12">About Us</h2>
       <div className="prose prose-lg text-gray-600 max-w-none">
-   <h1>Oil Change Addison – Fast & Reliable Auto Repair Near You</h1>
+
 
 
 
