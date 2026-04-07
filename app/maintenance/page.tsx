@@ -211,7 +211,10 @@ Serpentine belt replacement
 <h2 className="text-5xl font-bold tracking-tight text-gray-900">Undercoating</h2>
 
 
-<h2>Why Local Drivers Trust Our Automotive Repair Shop</h2>
+
+<h2 className="text-5xl font-bold tracking-tight text-gray-900">Why Local Drivers Trust Our Automotive Repair Shop/h2>
+
+
 <h3>Oil Change Addison Near Me – Quick & Professional Service</h3>
 
 <p>As your neighborhood <strong>automotive repair</strong> experts in Addison, we combine speed, quality parts, and fair pricing. We <strong>ensure your vehicle</strong> receives the proper care it deserves, whether you drive a daily commuter, family SUV, or heavy-duty truck.</p>
