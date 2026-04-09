@@ -375,17 +375,28 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
 
 
+<h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-6">
+  Why Local Drivers Trust Our Automotive Repair Shop
+</h2>
+
+<h3 className="text-2xl font-semibold mt-4 mb-2">
+  Oil Change Addison Near Me – Quick & Professional Service
+</h3>
+
+<p className="mb-4 leading-relaxed">
+  As your neighborhood <strong>automotive repair</strong> experts in Addison, we combine speed, quality parts, and fair pricing. We <strong>ensure your vehicle</strong> receives the proper care it deserves, whether you drive a daily commuter, family SUV, or heavy-duty truck.
+</p>
+
+<h3 className="text-2xl font-semibold mt-6 mb-2">
+  Ready to Schedule Your Service?
+</h3>
+
+<p className="mb-4 leading-relaxed">
+  Contact us today for your next <strong>quick oil change</strong>, full maintenance package, or any <strong>auto repair near me</strong> needs. Walk-ins are welcome and <strong>same day auto repair</strong> is available on most services.
+</p>
+
+
         
-<h2 className="text-5xl font-bold tracking-tight text-gray-900">Why Local Drivers Trust Our Automotive Repair Shop </h2>
-
-
-<h3>Oil Change Addison Near Me – Quick & Professional Service</h3>
-
-<p>As your neighborhood <strong>automotive repair</strong> experts in Addison, we combine speed, quality parts, and fair pricing. We <strong>ensure your vehicle</strong> receives the proper care it deserves, whether you drive a daily commuter, family SUV, or heavy-duty truck.</p>
-
-
-<h3>Ready to Schedule Your Service?</h3>
-<p>Contact us today for your next <strong>quick oil change</strong>, full maintenance package, or any <strong>auto repair near me</strong> needs. Walk-ins are welcome and <strong>same day auto repair</strong> is available on most services.</p>
       </div>
     </div>
   </section>
