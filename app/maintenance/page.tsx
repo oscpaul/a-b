@@ -217,7 +217,6 @@ Contact us today for your next quick oil change, full maintenance package, or an
   {/* About / Lorem Ipsum Section */}
   <section className="py-24 bg-white">
     <div className="max-w-4xl mx-auto px-6">
-      <h2 className="text-5xl font-bold tracking-tight text-center mb-12">About Us</h2>
       <div className="prose prose-lg text-gray-600 max-w-none">
 
 
@@ -280,7 +279,11 @@ In Illinois, where many areas require a passing OBD emissions test every two yea
 <h2 className="text-5xl font-bold tracking-tight text-gray-900">Undercoating</h2>
 
 
+<p>
+The Importance of Undercoating Your Vehicle – Especially in IllinoisUndercoating is a protective spray or coating applied to the underside of your vehicle (frame, floor pans, wheel wells, and other exposed metal areas) that creates a durable barrier against rust and corrosion. In Illinois, this service is particularly critical because of the state's harsh winters, where roads are heavily treated with road salt, brine, and chemicals that accelerate rust formation. Salt and moisture mix to create a corrosive soup that eats away at metal components, leading to expensive repairs on brake lines, fuel lines, suspension parts, exhaust systems, and even structural frame damage. A quality undercoating prevents moisture and salt from reaching bare metal, reduces road noise and vibration for a quieter ride, helps maintain your vehicle's structural integrity and safety, and preserves its resale value. Without protection, many Illinois vehicles develop serious rust issues within just a few years — making undercoating one of the smartest preventive maintenance investments you can make.How 2 Brothers Auto Delivers the Cheapest and Highest-Quality UndercoatingWhen it comes to getting professional undercoating done right in the Chicagoland area, 2 Brothers Auto (located in Addison, IL, serving DuPage County and surrounding communities like Lombard, Wheaton, and Glen Ellyn) stands out for offering some of the most competitive pricing paired with outstanding quality and workmanship. As a trusted local shop known for honest service and expert auto care, they use high-performance undercoating materials that provide long-lasting protection without cutting corners. Their experienced technicians thoroughly prepare the undercarriage, ensuring full coverage and proper adhesion so the coating effectively seals out salt, water, and debris. Customers appreciate their straightforward approach, fair rates, and attention to detail — making 2 Brothers Auto a go-to option for drivers who want premium rust protection at a price that won’t break the bank. Whether you drive a daily commuter or a truck that sees heavy winter miles, their undercoating service helps keep your vehicle safer and on the road longer while saving you from costly future repairs.If you're in the Addison/DuPage area and ready to protect your car or truck before the next winter season, give 2 Brothers Auto a call — their combination of affordable pricing and high-quality results makes them one of the best values for undercoating in Illinois. 
 
+
+</p>
 <h2 className="text-5xl font-bold tracking-tight text-gray-900">Why Local Drivers Trust Our Automotive Repair Shop </h2>
 
 
@@ -288,8 +291,6 @@ In Illinois, where many areas require a passing OBD emissions test every two yea
 
 <p>As your neighborhood <strong>automotive repair</strong> experts in Addison, we combine speed, quality parts, and fair pricing. We <strong>ensure your vehicle</strong> receives the proper care it deserves, whether you drive a daily commuter, family SUV, or heavy-duty truck.</p>
 
-<p>Search no further for <strong>Oil change Addison</strong>, <strong>Oil change Addison near me</strong>, or <strong>Auto repair Addison</strong> — we are the convenient and trustworthy choice for all your auto repair needs.</p>
-<p>Looking for a trusted <strong>oil change Addison</strong> or <strong>oil change Addison near me</strong>? Our car service center makes vehicle maintenance simple and affordable. Whether you need a <strong>quick oil change</strong>, <strong>express oil change</strong>, <strong>10 minute oil change</strong>, or a premium <strong>full synthetic oil change</strong>, our experienced auto mechanic team delivers fast, high-quality service.</p>
 
 <h3>Ready to Schedule Your Service?</h3>
 <p>Contact us today for your next <strong>quick oil change</strong>, full maintenance package, or any <strong>auto repair near me</strong> needs. Walk-ins are welcome and <strong>same day auto repair</strong> is available on most services.</p>
