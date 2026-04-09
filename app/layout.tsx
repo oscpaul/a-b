@@ -214,6 +214,22 @@ export default function RootLayout({children}:{children:ReactNode}) {
             "longitude": -87.9890
           }
         },
+                         {
+                  "@type": "Place",
+                  "@id": "https://www.devwordpressspace.site/#addison",
+                  "name": "Lombard, IL",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Addison",
+                    "addressRegion": "IL",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                   "latitude":41.8800,
+    "longitude": -88.0078
+                  }
+                },
         {
           "@type": "Place",
           "@id": "https://www.devwordpressspace.site/#villa-park",
@@ -289,6 +305,22 @@ export default function RootLayout({children}:{children:ReactNode}) {
             "longitude": -87.9890
           }
         },
+                          {
+                  "@type": "Place",
+                  "@id": "https://www.devwordpressspace.site/#addison",
+                  "name": "Lombard, IL",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Addison",
+                    "addressRegion": "IL",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                   "latitude":41.8800,
+    "longitude": -88.0078
+                  }
+                },
         {
           "@type": "Place",
           "@id": "https://www.devwordpressspace.site/#villa-park",
@@ -364,6 +396,22 @@ export default function RootLayout({children}:{children:ReactNode}) {
             "longitude": -87.9890
           }
         },
+                         {
+                  "@type": "Place",
+                  "@id": "https://www.devwordpressspace.site/#addison",
+                  "name": "Lombard, IL",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Addison",
+                    "addressRegion": "IL",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                   "latitude":41.8800,
+    "longitude": -88.0078
+                  }
+                },
         {
           "@type": "Place",
           "@id": "https://www.devwordpressspace.site/#villa-park",
