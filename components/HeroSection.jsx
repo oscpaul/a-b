@@ -20,7 +20,7 @@ export default function Hero() {
         />
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/65 md:bg-black/55"></div>
+        <div className="absolute inset-0 bg-black/10 md:bg-black/10"></div>
 
         {/* Content - Centered and Readable */}
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20 pb-16">
