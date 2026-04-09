@@ -219,46 +219,75 @@ Contact us today for your next quick oil change, full maintenance package, or an
     <div className="max-w-4xl mx-auto px-6">
       <div className="prose prose-lg text-gray-600 max-w-none">
 
-<h2 className="text-5xl font-bold tracking-tight text-gray-900">Tune-ups , Brakes Maintenance</h2>
+<h2 className="text-5xl font-bold tracking-tight text-gray-900">
+  Tune-ups, Brakes Maintenance
+</h2>
 
-<h3>Complete Preventive Maintenance Services Included</h3>
+<h3 className="text-2xl font-semibold mt-6 mb-2">
+  Complete Preventive Maintenance Services Included
+</h3>
 
-<p>
+<p className="mb-4 leading-relaxed">
   A vehicle tune-up is a routine maintenance service designed to restore your engine to optimal performance by inspecting, cleaning, adjusting, or replacing key wear-and-tear components. In modern cars (especially those with electronic ignition and fuel injection), a typical tune-up includes:
-  Replacing spark plugs (and sometimes ignition coils or wires)
-  Replacing the air filter and fuel filter
-  Checking or replacing belts and hoses
-  Inspecting fluid levels and condition
-  Scanning the On-Board Diagnostics (OBD) system for trouble codes
-  Sometimes including an oil change, tire rotation, or broader inspection of the battery, brakes, and emission control parts
+</p>
 
+<ul className="list-disc pl-6 mb-4 space-y-1">
+  <li>Replacing spark plugs (and sometimes ignition coils or wires)</li>
+  <li>Replacing the air filter and fuel filter</li>
+  <li>Checking or replacing belts and hoses</li>
+  <li>Inspecting fluid levels and condition</li>
+  <li>Scanning the On-Board Diagnostics (OBD) system for trouble codes</li>
+  <li>Sometimes including an oil change, tire rotation, or broader inspection of the battery, brakes, and emission control parts</li>
+</ul>
+
+<p className="mb-4 leading-relaxed">
   The goal is to ensure the proper balance of air, fuel, and spark for efficient combustion.
+</p>
 
+<p className="mb-4 leading-relaxed font-semibold">
   How a Tune-Up Reduces Emissions
+</p>
+
+<p className="mb-4 leading-relaxed">
   When engine components wear out, combustion becomes incomplete or inefficient. This leads to higher levels of harmful pollutants such as hydrocarbons (HC), carbon monoxide (CO), nitrogen oxides (NOx), and excess carbon dioxide (CO₂) being released through the exhaust.
+</p>
 
+<p className="mb-2 leading-relaxed">
   A tune-up lowers emissions in several direct ways:
-  Fresh spark plugs create a stronger, more consistent spark → fuel burns more completely instead of partially burning and releasing unburned hydrocarbons.
-  A clean air filter allows the correct amount of air into the engine → preventing a too-rich (excess fuel) or too-lean mixture that increases pollutants.
-  Clean fuel delivery (via a new fuel filter) ensures the engine receives uncontaminated fuel at the right pressure → improving combustion efficiency.
-  Proper ignition timing and sensor function (checked during the OBD scan) help the engine control module adjust fuel and spark accurately → reducing excess emissions.
+</p>
 
+<ul className="list-disc pl-6 mb-4 space-y-1">
+  <li>Fresh spark plugs create a stronger, more consistent spark → fuel burns more completely instead of partially burning and releasing unburned hydrocarbons.</li>
+  <li>A clean air filter allows the correct amount of air into the engine → preventing a too-rich (excess fuel) or too-lean mixture that increases pollutants.</li>
+  <li>Clean fuel delivery (via a new fuel filter) ensures the engine receives uncontaminated fuel at the right pressure → improving combustion efficiency.</li>
+  <li>Proper ignition timing and sensor function (checked during the OBD scan) help the engine control module adjust fuel and spark accurately → reducing excess emissions.</li>
+</ul>
+
+<p className="mb-4 leading-relaxed">
   In Illinois, where many areas require a passing OBD emissions test every two years to renew registration, a well-timed tune-up is especially useful. It often clears minor issues that trigger the check-engine light or cause the vehicle to fail the test, helping you stay compliant while also improving fuel economy and reducing your car's overall environmental impact.
+</p>
 
+<p className="mb-4 leading-relaxed">
   In short, a tune-up doesn't just make your car run smoother and more reliably — it helps it burn fuel cleaner, which directly cuts down on tailpipe pollution. Most experts recommend a tune-up every 25,000–30,000 miles or once a year, depending on your vehicle and driving conditions. If you're in Illinois and approaching your emissions test deadline, scheduling one soon can prevent headaches and failed inspections.
 </p>
 
-<h4>Full Auto Repair Near Me in Addison</h4>
+<h4 className="text-xl font-semibold mt-8 mb-2">
+  Full Auto Repair Near Me in Addison
+</h4>
 
-<p>
+<p className="mb-4 leading-relaxed">
   Regular <strong>preventive maintenance</strong> is the smartest way to avoid expensive repairs. During every <strong>tune up</strong>, we perform a thorough <strong>multi point inspection</strong> and include the following <strong>services included</strong>:
 </p>
 
-<h4>Additional Automotive Repair Services</h4>
+<h4 className="text-xl font-semibold mt-6 mb-2">
+  Additional Automotive Repair Services
+</h4>
 
-<p>Our expert technicians offer a wide range of repairs including:</p>
+<p className="mb-4 leading-relaxed">
+  Our expert technicians offer a wide range of repairs including:
+</p>
 
-<ul>
+<ul className="list-disc pl-6 mb-4 space-y-1">
   <li><strong>Transmission fluid change</strong></li>
   <li><strong>Coolant flush</strong></li>
   <li><strong>Power steering fluid</strong> replacement</li>
@@ -267,15 +296,15 @@ Contact us today for your next quick oil change, full maintenance package, or an
   <li><strong>Serpentine belt replacement</strong></li>
 </ul>
 
-<p>
+<p className="mb-4 leading-relaxed">
   Popular packages combine <strong>oil change and tire rotation</strong> as well as <strong>oil change and brake service</strong> to save you time and money.
 </p>
 
-<p>
+<p className="mb-4 leading-relaxed">
   Beyond oil changes, we are your reliable <strong>auto repair near me</strong> and <strong>car repair shop</strong> in Addison. Our skilled <strong>mechanic near me</strong> team handles everything from routine <strong>car maintenance</strong> to complex <strong>vehicle repair</strong> and <strong>emergency car repair</strong>.
 </p>
 
-<p>
+<p className="mb-4 leading-relaxed">
   We also provide <strong>roadside assistance</strong> coordination and honest, transparent service at our convenient <strong>car service center</strong>.
 </p>
 
