@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         },
         {
           "@type": "Service",
-          "name": "Routine Preventive Maintenance",
+          "name": "Tune up",
           "serviceType": "Preventive Maintenance",
           "provider": { "@id": "https://www.yourdomain.com/#business" },
           "description": "Comprehensive routine maintenance including tire rotation, brake inspection, fluid top-off, air filter replacement, cabin filter replacement, battery test, and more. Perfect for keeping your vehicle reliable.",
@@ -232,39 +232,37 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
 
 
-<h2 className="text-5xl font-bold tracking-tight text-gray-900">Tune ups , Brakes Maintenance</h2>
+<h2 className="text-5xl font-bold tracking-tight text-gray-900">Tune-ups , Brakes Maintenance</h2>
 <h3>Complete Preventive Maintenance Services Included</h3>
+        <p>
+        A vehicle tune-up is a routine maintenance service designed to restore your engine to optimal performance by inspecting, cleaning, adjusting, or replacing key wear-and-tear components. In modern cars (especially those with electronic ignition and fuel injection), a typical tune-up includes:Replacing spark plugs (and sometimes ignition coils or wires)
+Replacing the air filter and fuel filter
+Checking or replacing belts and hoses
+Inspecting fluid levels and condition
+Scanning the On-Board Diagnostics (OBD) system for trouble codes
+Sometimes including an oil change, tire rotation, or broader inspection of the battery, brakes, and emission control parts
 
+The goal is to ensure the proper balance of air, fuel, and spark for efficient combustion.How a Tune-Up Reduces EmissionsWhen engine components wear out, combustion becomes incomplete or inefficient. This leads to higher levels of harmful pollutants such as hydrocarbons (HC), carbon monoxide (CO), nitrogen oxides (NOx), and excess carbon dioxide (CO₂) being released through the exhaust.A tune-up lowers emissions in several direct ways:Fresh spark plugs create a stronger, more consistent spark → fuel burns more completely instead of partially burning and releasing unburned hydrocarbons.
+A clean air filter allows the correct amount of air into the engine → preventing a too-rich (excess fuel) or too-lean mixture that increases pollutants.
+Clean fuel delivery (via a new fuel filter) ensures the engine receives uncontaminated fuel at the right pressure → improving combustion efficiency.
+Proper ignition timing and sensor function (checked during the OBD scan) help the engine control module adjust fuel and spark accurately → reducing excess emissions.
+
+In Illinois, where many areas require a passing OBD emissions test every two years to renew registration, a well-timed tune-up is especially useful. It often clears minor issues that trigger the check-engine light or cause the vehicle to fail the test, helping you stay compliant while also improving fuel economy and reducing your car's overall environmental impact.In short, a tune-up doesn't just make your car run smoother and more reliably — it helps it burn fuel cleaner, which directly cuts down on tailpipe pollution. Most experts recommend a tune-up every 25,000–30,000 miles or once a year, depending on your vehicle and driving conditions. If you're in Illinois and approaching your emissions test deadline, scheduling one soon can prevent headaches and failed inspections.
+
+
+        </p>
+        
 <h4>Full Auto Repair Near Me in Addison</h4>
-  <p> className="text-xl text-gray-600 max-w-2xl mx-auto"
-  
-Transmission fluid change
-Coolant flush
-Power steering fluid replacement
-Brake fluid flush
-Spark plug replacement
-Serpentine belt replacement
-  </p>
 
-<p>Regular <strong>preventive maintenance</strong> is the smartest way to avoid expensive repairs. During every <strong>oil change service</strong>, we perform a thorough <strong>multi point inspection</strong> and include the following <strong>services included</strong>:</p>
 
-<ul>
-    <li><strong>Tire rotation</strong></li>
-    <li><strong>Oil filter</strong> replacement</li>
-    <li><strong>Air filter replacement</strong></li>
-    <li><strong>Cabin air filter</strong> replacement</li>
-    <li><strong>Brake inspection</strong></li>
-    <li><strong>Fluid top off</strong></li>
-    <li><strong>Windshield wiper replacement</strong></li>
-    <li><strong>Battery test</strong></li>
-    <li><strong>Tire pressure</strong> check and adjustment</li>
-</ul>
+<p>Regular <strong>preventive maintenance</strong> is the smartest way to avoid expensive repairs. During every <strong>tune up</strong>, we perform a thorough <strong>multi point inspection</strong> and include the following <strong>services included</strong>:</p>
+
+
 
 <h4>Additional Automotive Repair Services</h4>
 <p>Our expert technicians offer a wide range of repairs including:</p>
 
 <ul>
-    <li><strong>Tune up service</strong></li>
     <li><strong>Transmission fluid change</strong></li>
     <li><strong>Coolant flush</strong></li>
     <li><strong>Power steering fluid</strong> replacement</li>
