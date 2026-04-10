@@ -5,11 +5,11 @@ import Link from 'next/link';
 import HeroVideo from "@/components/HeroVideo"
 import Script from 'next/script';
 export const metadata: Metadata = {
-  title: 'Oil Change Addison IL | Quick Auto Repair Near Me',
-  description: 'Oil Change Addison IL – Fast quick oil change, full synthetic oil change & cheap oil change near me. Same day auto repair, tire rotation & preventive maintenance.',
+  title: 'Tune-up Maintenance Addison IL | Quick Auto Repair Near Me',
+  description: 'Keep your vehicle safe with professional tune-up, brake service, and undercoating services in Addison. Same day auto repair, tire rotation & preventive maintenance.',
   openGraph: {
     title: 'Routine Maintenance Services - 2 Brothers Auto Service',
-    description: 'Keep your vehicle safe and reliable with professional brake, oil change, and undercoating services in Addison.',
+    description: 'Keep your vehicle safe and reliable with professional tune-up, brake service, and undercoating services in Addison.',
     images: [{ url: '/oil-2.png' }], // replace with your actual image
   },
 };
