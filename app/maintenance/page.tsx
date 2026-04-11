@@ -109,7 +109,7 @@ export default function MaintenancePage() {
   {/* Content */}
   <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-12 pb-16 md:pt-0">
     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight text-white mb-6 font-serif">
-      Oil Change and <br />Maintenance
+      Tune-up and <br />Maintenance
     </h1>
   
     
