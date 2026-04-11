@@ -96,15 +96,52 @@ export default function MaintenancePage() {
   <div className="absolute inset-0 bg-black/60 md:bg-black/50 z-10"></div>
   
   {/* Hero Video */}
-  <video 
-    autoPlay 
-    muted 
-    loop 
-    playsInline 
-    className="absolute inset-0 w-full h-full object-cover"
+import Link from 'next/link';
+import Image from 'next/image'; // Recommended for thumbnails
+
+// ... inside your component
+
+<div className="relative w-full h-full overflow-hidden">  {/* Container keeps same size as before */}
+
+  {/* Clickable Thumbnail + Play Button Overlay */}
+  <Link 
+    href="/watch/your-video-slug"   // ← Change this to your actual watch page URL
+    className="block relative w-full h-full group"
   >
-    <source src="/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.mp4" type="video/mp4" />
-  </video>
+    {/* Thumbnail Image (use a static image or first frame) */}
+    <Image 
+      src="/thumbnails/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.jpg"  // Create this image
+      alt="Watch video"
+      fill
+      className="object-cover"
+      priority // if this is above the fold
+    />
+
+    {/* Dark overlay for better visibility */}
+    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
+
+    {/* Big Play Button */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="w-20 h-20 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all group-hover:scale-110 shadow-lg">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          className="w-10 h-10 text-black ml-1" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 4.01V8" />
+        </svg>
+      </div>
+    </div>
+
+    {/* Optional text */}
+    <div className="absolute bottom-6 left-6 text-white text-lg font-medium drop-shadow-md">
+      Watch the video
+    </div>
+  </Link>
+</div>
 
   {/* Content */}
   <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-12 pb-16 md:pt-0">
