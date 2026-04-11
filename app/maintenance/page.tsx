@@ -188,64 +188,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
   {/* Video Section */}
   <section className="py-24 bg-gray-50">
     <div className="max-w-5xl mx-auto px-6">
-      <div className="text-center mb-12">
-        <h2 className="text-5xl font-bold tracking-tight text-gray-900">See Our Work</h2>
-      </div>
-
-
       
-      {/* Add your videos here */}
-    <div className="grid md:grid-cols-2 gap-6 md:gap-8 px-4 md:px-0 max-w-5xl mx-auto">
-  
-  {/* Video 1 */}
-  <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-lg">
-    <div className="relative w-full h-full overflow-hidden">  {/* Container keeps same size as before */}
-
-  {/* Clickable Thumbnail + Play Button Overlay */}
-  <Link 
-    href="/maintenance-1"   // ← Change this to your actual watch page URL
-    className="block relative w-full h-full group"
-  >
-    {/* Thumbnail Image (use a static image or first frame) */}
-    <Image 
-      src="/thumbnail/0061.jpg"  // Create this image
-      alt="Watch video"
-      fill
-      className="object-cover"
-      priority // if this is above the fold
-    />
-
-    {/* Dark overlay for better visibility */}
-    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
-
-    {/* Big Play Button */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-20 h-20 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all group-hover:scale-110 shadow-lg">
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          className="w-10 h-10 text-black ml-1" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 4.01V8" />
-        </svg>
-      </div>
-    </div>
-
-    {/* Optional text */}
-    <div className="absolute bottom-6 left-6 text-white text-lg font-medium drop-shadow-md">
-      Watch the video
-    </div>
-  </Link>
-</div>
-  </div>
-
- 
-  
-
-   
     
     
     
