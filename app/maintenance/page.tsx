@@ -258,7 +258,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
   >
     {/* Thumbnail Image (use a static image or first frame) */}
     <Image 
-      src="/thumbnail/0015.jpg"  // Create this image
+      src="/thumbnail/0150.jpg"  // Create this image
       alt="Watch video"
       fill
       className="object-cover"
