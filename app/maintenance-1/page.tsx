@@ -73,7 +73,7 @@ export default function MaintenanceVideoWatchPage() {
               className="w-full h-full"
             >
               <source 
-                src="/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.mp4" 
+                src="/A3DA80A7-056C-427E-8F14-472A631C1794.mp4" 
                 type="video/mp4" 
               />
               Your browser does not support the video tag.
