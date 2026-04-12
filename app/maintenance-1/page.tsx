@@ -6,12 +6,12 @@ import Link from 'next/link';
 
 // Video details - change these to match your video
 const videoTitle = "Maintenance Video Title";           // Make it descriptive
-const videoDescription = "Detailed description of what this maintenance video shows. Include key points, benefits, and any important information viewers should know. Aim for 100-300 words for better SEO.";
+const videoDescription = "This classic tune-up service can make a huge difference in how your car drives — smoother idle, better acceleration, improved gas mileage, and fewer check engine lights.";
 const videoUploadDate = "2026-04-01";                   // Use actual upload date (YYYY-MM-DD)
 const videoDuration = "PT2M45S";                        // ISO 8601 format: PT minutes M seconds S  (e.g. PT1M30S = 1 min 30 sec)
-const thumbnailUrl = "https://yoursite.com/thumbnails/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.jpg"; // Full absolute URL
-const videoContentUrl = "https://yoursite.com/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.mp4";     // Full absolute URL to your MP4
-const videoEmbedUrl = "https://yoursite.com/watch/maintenance-video";                       // Usually same as page URL
+const thumbnailUrl = "https://www.devwordpressspace.site/thumbnails/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.jpg"; // Full absolute URL
+const videoContentUrl = "https://www.devwordpressspace.site/44D26A87-4FE2-41DB-A7AA-E43DD3E0C011.mp4";     // Full absolute URL to your MP4
+const videoEmbedUrl = "https://www.devwordpressspace.site/maintenance-1";                       // Usually same as page URL
 
 export const metadata: Metadata = {
   title: videoTitle,
@@ -28,7 +28,7 @@ export default function MaintenanceVideoWatchPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": videoTitle,
+    "name": "Tune up video, Remove and inspect the old spark plugs, faulty ignition coils and spark plug wires, engine air filter,fuel system (including fuel injectors and throttle body,worn serpentine belts and cracked hoses, fix to spec",
     "description": videoDescription,
     "thumbnailUrl": thumbnailUrl,
     "uploadDate": videoUploadDate,
