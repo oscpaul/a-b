@@ -250,7 +250,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
   {/* Clickable Thumbnail + Play Button Overlay */}
   <Link 
-    href="/maintenance-1"   // ← Change this to your actual watch page URL
+    href="/maintenance-2"   // ← Change this to your actual watch page URL
     className="block relative w-full h-full group"
   >
     {/* Thumbnail Image (use a static image or first frame) */}
