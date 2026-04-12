@@ -3,37 +3,37 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
-  const host = request.headers.get('host') || '';
-  const protocol = request.headers.get('x-forwarded-proto') || url.protocol.replace(':', '');
 
-  let shouldRedirect = false;
+  let changed = false;
 
-  // 1. Force HTTPS
-  if (protocol === 'http') {
+  // Force HTTPS
+  if (url.protocol === 'http:') {
     url.protocol = 'https:';
-    shouldRedirect = true;
+    changed = true;
   }
 
-  // 2. Force www (you said www is fine)
-  if (!host.startsWith('www.')) {
-    url.hostname = 'www.' + host.replace(/^www\./, '');
-    shouldRedirect = true;
+  // Force www
+  if (!url.hostname.startsWith('www.')) {
+    url.hostname = `www.${url.hostname}`;
+    changed = true;
   }
 
-  // If any change was made, do a permanent 301 redirect (Google loves this)
-  if (shouldRedirect) {
-    return NextResponse.redirect(url, {
-      status: 301,           // Permanent redirect - best for SEO
-      headers: {
-        'Cache-Control': 'public, max-age=31536000', // Cache the redirect
-      },
-    });
+  // Remove trailing slash (except root)
+  if (url.pathname !== '/' && url.pathname.endsWith('/')) {
+    url.pathname = url.pathname.slice(0, -1);
+    changed = true;
+  }
+
+  // If anything changed, do ONE redirect
+  if (changed) {
+    return NextResponse.redirect(url, 301);
   }
 
   return NextResponse.next();
 }
 
-// Run middleware on all routes
 export const config = {
-  matcher: '/:path*',
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)',
+  ],
 };
