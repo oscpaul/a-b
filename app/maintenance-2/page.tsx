@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function MaintenanceVideoWatchPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "VideoObject",
+    "@type": "Routine car maintenance is the regular care your vehicle needs to stay safe, reliable, and efficient. Think of it as ongoing upkeep that prevents breakdowns and expensive repairs later.",
     "name": videoTitle,
     "description": videoDescription,
     "thumbnailUrl": thumbnailUrl,
