@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "devwordpressspace.site" }
+      ],
+      "destination": "https://www.devwordpressspace.site/$1",
+      "permanent": true
+    }
+  ]
+}
