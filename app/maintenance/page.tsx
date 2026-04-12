@@ -193,6 +193,8 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
 
   {/* Video 1 */}
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 px-4 md:px-0 max-w-5xl mx-auto">
+
   <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-lg">
     <div className="relative w-full h-full overflow-hidden">  {/* Container keeps same size as before */}
 
@@ -298,7 +300,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
 
       
-
+          </div>
 
 
 
