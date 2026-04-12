@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
   let hostname = request.headers.get('host') || '';
 
   // Remove www if you prefer non-www version
-   const shouldUseWww = true;   // Change to false if you want non-www
+  //const shouldUseWww = true;   // Change to false if you want non-www
 
   const protocol = request.headers.get('x-forwarded-proto') || 'http';
   const isHttp = protocol === 'http';
