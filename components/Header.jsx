@@ -45,8 +45,8 @@ export default function Header() {
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/oil-change-service">
             Oil Change
           </a>
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/tune-up-service">
-            Tune ups
+          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/tune-up">
+            Tune up Service
           </a>
 <Link
   href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
@@ -79,15 +79,15 @@ export default function Header() {
     </a>
     <a 
       className="text-gray-800 font-medium text-base py-2" 
-      href="/suspension-service"
+      href="/oil-change-service"
     >
-      Ride and Handling
+      Oil Change
     </a>
     <a 
       className="text-gray-800 font-medium text-base py-2" 
-      href="/maintenance"
+      href="/tune-up"
     >
-      Brakes, Maintenance, Oil Change
+      Tune up Service
     </a>
 
     {/* Book Now Button - Matches width of other items */}
