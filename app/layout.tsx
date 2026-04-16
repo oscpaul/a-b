@@ -284,7 +284,7 @@ export default function RootLayout({children}:{children:ReactNode}) {
                 },
                 {
                   "@type": "Service",
-                  "name": "Brake and Suspension Service",
+                  "name": "Oil Change Service",
                   "provider": {
                     "@id": "https://www.devwordpressspace.site/#autorepair"
                   },
@@ -375,7 +375,7 @@ export default function RootLayout({children}:{children:ReactNode}) {
                 },
                 {
                   "@type": "Service",
-                  "name": "Routine Maintenance",
+                  "name": "Tune up",
                   "provider": {
                     "@id": "https://www.devwordpressspace.site/#autorepair"
                   },
