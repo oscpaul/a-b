@@ -42,11 +42,11 @@ export default function Header() {
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/muffler-service">
             Muffler Repair
           </a>
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/suspension-service">
-            Ride and Handling
+          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/oil-change-service">
+            Oil Change
           </a>
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/maintenance">
-            Brakes, Maintenance, Oil Change
+          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/tune-up-service">
+            Tune ups
           </a>
 <Link
   href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
