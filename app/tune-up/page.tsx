@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: 'Tune-up Maintenance Addison IL | Quick Auto Repair Near Me',
   description: 'Keep your vehicle safe with professional tune-up, brake service, and undercoating services in Addison. Same day auto repair, tire rotation & preventive maintenance.',
   openGraph: {
-    title: 'Routine Maintenance Services - 2 Brothers Auto Service',
-    description: 'Keep your vehicle safe and reliable with professional tune-up, brake service, and undercoating services in Addison.',
+    title: 'Tune-up Maintenance Addison IL | Quick Auto Repair Near Me',
+    description: 'Keep your vehicle safe with professional tune-up, brake service, and undercoating services in Addison. Same day auto repair, tire rotation & preventive maintenance.',
     images: [{ url: '/oil-2.png' }], // replace with your actual image
   },
 };
@@ -26,23 +26,7 @@ export const metadata: Metadata = {
     __html: JSON.stringify({
       "@context": "https://schema.org",
    "@graph": [
-        {
-          "@type": "Service",
-          "name": "Oil Change Service",
-          "serviceType": "Automotive Maintenance",
-          "provider": { "@id": "https://www.yourdomain.com/#business" },
-          "description": "Quick oil change, full synthetic oil change, conventional oil change, 5-quart oil change, high mileage oil change for cars and trucks in Addison IL. Includes oil filter replacement and multi-point inspection.",
- "areaServed": {
-    "@type": "Place",
-    "name": "Addison, IL and surrounding areas"
-  },          "offers": {
-            "@type": "Offer",
-            "price": "49.99",           // Update with your actual starting price
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://www.yourdomain.com/services/maintenance"
-          }
-        },
+    
         {
           "@type": "Service",
           "name": "Tune up",
@@ -60,27 +44,7 @@ export const metadata: Metadata = {
             "availability": "https://schema.org/InStock",
             "url": "https://www.yourdomain.com/services/maintenance"
           }
-        },
-     {
-  "@type": "Service",
-  "name": "Undercoating Service",
-  "serviceType": "Vehicle Undercoating",
-  "provider": {
-    "@id": "https://www.yourdomain.com/#business"
-  },
-  "description": "Professional undercoating and rustproofing application to protect your vehicle's underbody from rust, salt, and road debris. Ideal for cars and trucks in the Addison, IL area.",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Addison, IL and surrounding areas"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "149.99",          // Replace with your actual price
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.yourdomain.com/services/maintenance"
-  }
-}
+   
       ]
     })
   }}
@@ -141,51 +105,9 @@ export default function MaintenancePage() {
 </section>
 
   {/* Features / Services Section */}
-  <section className="py-24 bg-white">
-    <div className="max-w-6xl mx-auto px-6">
-      <div className="text-center mb-16">
-       
-                <h2 className="text-5xl font-bold tracking-tight text-gray-900">Quick, Cheap Oil Change</h2>
-
-<h3>Signs You Need an Oil Change</h3>
-<p>Wondering about the <strong>signs you need an oil change</strong>? Common indicators include dark or gritty <strong>engine oil</strong>, unusual engine noise, reduced fuel efficiency, or the check engine light. Don’t wait until problems arise—schedule your <strong>oil change service</strong> today.
-Signs You Need an Oil Change and Other Maintenance
-Contact us today for your next quick oil change, full maintenance package, or any auto repair near me needs. Walk-ins welcome and same-day service available on most repairs.
-      </p>
-        <h4>High Mileage Oil Changes in Addison</h4>
-<p>Driving a high-mileage vehicle? We specialize in <strong>high mileage</strong> oil changes designed for engines with over 75,000 miles. These advanced formulations help reduce oil consumption, minimize leaks, and provide extra protection against wear in older engines.</p>
-      </div>
-
-
-<h3>Choosing the Right Type of Oil for Your Vehicle</h3>
-<p>We offer <strong>conventional oil change</strong>, <strong>synthetic oil change</strong>, <strong>5 quart oil change</strong>, <strong>car oil change</strong>, and <strong>truck oil change</strong>. We use quality <strong>engine oil</strong> and <strong>motor oil</strong> to <strong>ensure your vehicle</strong> stays protected and performs at its best.</p>
-<p>Not sure what <strong>type of oil</strong> is best for your car? We help you choose between <strong>synthetic oil</strong> and <strong>conventional oil</strong> based on your driving habits and vehicle needs. For many modern cars, <strong>synthetic oil</strong> provides superior protection, better fuel economy, and longer intervals between changes. However, some vehicles perform perfectly with high-quality <strong>conventional oil</strong>.</p>
-<p>We always refer to your <strong>owner manual</strong> and follow the <strong>vehicle manufacturer</strong> recommendations to select the correct <strong>motor oil</strong> and <strong>oil filter</strong> for optimal engine performance and longevity.</p>
-
-
-      <div className="grid md:grid-cols-3 gap-10">
-        <div className="text-center">
-          <div className="w-20 h-20 mx-auto bg-blue-100 rounded-3xl flex items-center justify-center text-4xl mb-6">🚀</div>
-          <h3 className="text-2xl font-semibold mb-3">Web Development</h3>
-          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-        </div>
-        
-        <div className="text-center">
-          <div className="w-20 h-20 mx-auto bg-emerald-100 rounded-3xl flex items-center justify-center text-4xl mb-6">📹</div>
-          <h3 className="text-2xl font-semibold mb-3">Video Production</h3>
-          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-        </div>
-        
-        <div className="text-center">
-          <div className="w-20 h-20 mx-auto bg-purple-100 rounded-3xl flex items-center justify-center text-4xl mb-6">📈</div>
-          <h3 className="text-2xl font-semibold mb-3">Digital Marketing</h3>
-          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+ 
   {/* Video Section */}
+  
   <section className="py-24 bg-gray-50">
     <div className="max-w-5xl mx-auto px-6">
 
@@ -194,7 +116,6 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
   {/* Video 1 */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 px-4 md:px-0 max-w-5xl mx-auto">
-
   <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-lg">
     <div className="relative w-full h-full overflow-hidden">  {/* Container keeps same size as before */}
 
@@ -211,10 +132,8 @@ Contact us today for your next quick oil change, full maintenance package, or an
       className="object-cover"
       priority // if this is above the fold
     />
-
     {/* Dark overlay for better visibility */}
     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
-
     {/* Big Play Button */}
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="w-20 h-20 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all group-hover:scale-110 shadow-lg">
@@ -224,7 +143,6 @@ Contact us today for your next quick oil change, full maintenance package, or an
 </svg>
       </div>
     </div>
-
     {/* Optional text */}
     <div className="absolute bottom-6 left-6 text-white text-lg font-medium drop-shadow-md">
       Watch the video
@@ -244,7 +162,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
 
 
-  {/* Video 1 */}
+  {/* Video 2 */}
   <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-lg">
     <div className="relative w-full h-full overflow-hidden">  {/* Container keeps same size as before */}
 
@@ -288,8 +206,7 @@ Contact us today for your next quick oil change, full maintenance package, or an
 
 
       
-          </div>
-
+          
 
 
 
