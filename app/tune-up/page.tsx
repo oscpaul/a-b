@@ -44,7 +44,7 @@ export const metadata: Metadata = {
             "availability": "https://schema.org/InStock",
             "url": "https://www.yourdomain.com/services/maintenance"
           }
-   
+        }
       ]
     })
   }}
