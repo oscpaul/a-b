@@ -331,12 +331,13 @@ export default function MaintenancePage() {
 </h2>
 
 <h3 className="text-2xl font-semibold mt-4 mb-2">
-  Oil Change Addison Near Me – Quick & Professional Service
+ Quick & Professional Service Going the Extra Mile
 </h3>
 
 <p className="mb-4 leading-relaxed">
-  As your neighborhood <strong>automotive repair</strong> experts in Addison, we combine speed, quality parts, and fair pricing. We <strong>ensure your vehicle</strong> receives the proper care it deserves, whether you drive a daily commuter, family SUV, or heavy-duty truck.
-</p>
+Our tune-up service is designed to keep your vehicle running at its best while extending its lifespan. As a trusted local shop right here in Addison, we take pride in serving our community with reliable, high-quality care. We’re conveniently located near the Addison emissions testing center, and we go the extra step by testing vehicles to help ensure they pass inspection with confidence. 
+  A full tune-up not only helps prolong the life of your car, but also improves fuel economy and overall performance. 
+  Backed by our consistent 5-star reviews on Google, you can count on us for honest service and dependable results every time.</p>
 
 <h3 className="text-2xl font-semibold mt-6 mb-2">
   Ready to Schedule Your Service?
