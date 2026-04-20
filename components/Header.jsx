@@ -45,7 +45,7 @@ export default function Header() {
           <a className="text-gray-800 font-medium text-sm sm:text-base" href="/oil-change-service">
             Oil Change
           </a>
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/tune-up">
+          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/maintenance">
             Tune up Service
           </a>
 <Link
@@ -85,7 +85,7 @@ export default function Header() {
     </a>
     <a 
       className="text-gray-800 font-medium text-base py-2" 
-      href="/tune-up"
+      href="/maintenance"
     >
       Tune up Service
     </a>
