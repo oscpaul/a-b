@@ -224,7 +224,7 @@ export default function MaintenancePage() {
       <div className="prose prose-lg text-gray-600 max-w-none">
 
 <h2 className="text-5xl font-bold tracking-tight text-gray-900">
-  Tune-ups, Brakes Maintenance
+  Tune-ups
 </h2>
 
 <h3 className="text-2xl font-semibold mt-6 mb-2">
