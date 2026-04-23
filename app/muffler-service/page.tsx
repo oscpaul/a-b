@@ -58,7 +58,7 @@ export default function MaintenancePage() {
       <div className="text-center mb-16">
         <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-4">Our Services</h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim.
         </p>
       </div>
 
