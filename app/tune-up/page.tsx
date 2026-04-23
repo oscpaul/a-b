@@ -407,6 +407,54 @@ Our tune-up service is designed to keep your vehicle running at its best while e
 
 
 
+
+
+
+<section className="py-12 bg-white">
+  <div className="max-w-5xl mx-auto px-6">
+    <div className="grid md:grid-cols-2 gap-10">
+
+      {/* First Image + Description */}
+      <div className="group">
+        <div className="relative overflow-hidden rounded-2xl shadow-lg mb-6">
+          <img 
+            src="image.jpg" 
+            alt="RAM truck receiving full service tune-up with hood open"
+            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+        <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+          Full Service Tune-Up
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Professional full service tune-up for your RAM truck. Includes spark plugs, filters, 
+          fluids, diagnostics and more to keep your truck running at peak performance.
+        </p>
+      </div>
+
+      {/* Second Image + Description */}
+      <div className="group">
+        <div className="relative overflow-hidden rounded-2xl shadow-lg mb-6">
+          <img 
+            src="100_0213.JPG"
+            alt="Grey truck in auto shop for professional tune-up service"
+            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+        <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+          Expert Truck Maintenance
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Trusted RAM truck service specializing in tune-ups, engine diagnostics, and full maintenance 
+          to ensure reliability and maximum power from your Dodge RAM.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
   
 
   {/* Final CTA */}
