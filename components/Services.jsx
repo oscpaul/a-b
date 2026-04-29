@@ -18,9 +18,13 @@ export default function Services() {
     },
     {
       title: "Tune-up",
-                  link : "/maintenance",
+                  link : "/tuneup",
       img: "diagnostics-1.png",
-      description: "Keep your vehicle running at peak performance with a professional auto tune-up. Our service includes spark plug replacement, filter checks, and system diagnostics to improve fuel efficiency, restore power, and prevent costly repairs. Drive smoother, safer, and longer with expert maintenance tailored to your car’s needs.",
+      description: <p>
+  Keep your vehicle running like new with our{" "}
+  <a href="/tune-up">auto tune-up services</a>, designed to improve
+  performance and prevent costly repairs.
+</p>,
     },
   ];
 
