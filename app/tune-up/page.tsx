@@ -6,8 +6,8 @@ import Link from 'next/link';
 import HeroVideo from "@/components/HeroVideo"
 import Script from 'next/script';
 export const metadata: Metadata = {
-  title: 'Tune-up Maintenance Addison IL | Quick Auto Repair Near Me',
-  description: 'Keep your vehicle safe with professional tune-up, brake service, and undercoating services in Addison. Same day auto repair, tire rotation & preventive maintenance.',
+  title: 'Car Tune-Up in Addison, IL | Fast & Reliable Auto Repair',
+  description: 'Get a professional car tune-up in Addison, IL. We offer fast, reliable auto maintenance including engine checks, spark plugs, and performance optimization. Same-day service available.',
   openGraph: {
     title: 'Tune-up Maintenance Addison IL | Quick Auto Repair Near Me',
     description: 'Keep your vehicle safe with professional tune-up, brake service, and undercoating services in Addison. Same day auto repair, tire rotation & preventive maintenance.',
@@ -79,8 +79,7 @@ export default function MaintenancePage() {
   
     
     <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.
-    </p>
+If your vehicle is running rough or losing performance, a professional car tune-up can help restore efficiency and reliability. Our auto repair service in Addison, IL provides complete tune-ups, including spark plug replacement, system diagnostics, and engine performance checks. We focus on identifying issues early and improving overall vehicle performance so you can drive with confidence. Whether you need routine maintenance or a quick check, we offer fast and dependable service to keep your car running smoothly.    </p>
     
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
       <a 
