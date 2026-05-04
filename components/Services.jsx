@@ -18,7 +18,7 @@ export default function Services() {
     },
     {
       title: "Tune-up",
-                  link : "/tuneup",
+                  link : "/tune-up",
       img: "diagnostics-1.png",
       description: <p>
   Keep your vehicle running like new with our{" "}
