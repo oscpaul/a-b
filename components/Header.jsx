@@ -37,74 +37,8 @@ export default function Header() {
           <span className="font-bold text-lg sm:text-xl">2 Brothers Auto</span>
         </a>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/muffler-service">
-            Muffler Repair
-          </a>
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/oil-change-service">
-            Oil Change
-          </a>
-          <a className="text-gray-800 font-medium text-sm sm:text-base" href="/tune-up">
-            Tune up Service
-          </a>
-<Link
-  href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
-  target="_blank"
-  rel="noopener noreferrer nofollow"
-  className="book-now-btn"
->
-  Book Now
-</Link>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-gray-800 text-2xl"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FiX /> : <FiMenu />}
-        </button>
-      </div>
-
-      {/* Mobile Dropdown Menu */}
-      {menuOpen && (
-    <div className="md:hidden bg-white shadow-md">
-  <nav className="flex flex-col px-5 py-4 space-y-3">
-    <a 
-      className="text-gray-800 font-medium text-base py-2" 
-      href="/muffler-service"
-    >
-      Muffler Repair
-    </a>
-    <a 
-      className="text-gray-800 font-medium text-base py-2" 
-      href="/oil-change-service"
-    >
-      Oil Change
-    </a>
-    <a 
-      className="text-gray-800 font-medium text-base py-2" 
-      href="/tune-up"
-    >
-      Tune up Service
-    </a>
-
-    {/* Book Now Button - Matches width of other items */}
-    <a
-      href="https://app.squareup.com/appointments/book/2pefuflo2hw9e3/LCTHN7ABYT9JV/start"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      className="text-[#006aff] font-medium text-base py-2 px-5 border border-[#006aff] 
-                 rounded-lg hover:bg-[#006aff] hover:text-white transition-all 
-                 inline-block w-fit"
-      style={{
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif',
-      }}
-    >
-      Book Now
-    </a>
-  </nav>
+       
+     
 </div>
       )}
     </header>
