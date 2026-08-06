@@ -48,7 +48,7 @@ export default function Services() {
               className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
             >
               {/* Image as a Link */}
-              <a href={service.link} className="w-full aspect-square block overflow-hidden">
+              <a href={"/"} className="w-full aspect-square block overflow-hidden">
                 <img
                   src={service.img}
                   alt={service.title}
