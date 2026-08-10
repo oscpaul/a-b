@@ -15,7 +15,7 @@ export default function RootLayout({children}:{children:ReactNode}) {
   return (
     <html lang="en">
       <head>
-     
+     <meta name="google-site-verification" content="ocmF5JIgPfR8YLad9s9XXi2gaWPnwFAo_5Twy4HnDDs" />
         </head>
       <body className={poppins.className}>
 
