@@ -22,7 +22,7 @@ export default function Services() {
       img: "diagnostics-1.png",
       description: <p>
   Keep your vehicle running like new with our{" "}
-  <a href="/tune-up">auto tune-up services</a>, designed to improve
+  auto tune-up services</a>, designed to improve
   performance and prevent costly repairs.
 </p>,
     },
