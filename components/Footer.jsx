@@ -40,14 +40,12 @@ export default function Footer() {
         {/* Service Areas */}
         <div>
           <h3 className="text-lg font-semibold mb-4">
-            <Link href="/service-areas">
               Service Areas
             </Link>
           </h3>
 
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/service-areas/lombard-il" className="hover:text-white">
                 Lombard, IL
               </Link>
             </li>
